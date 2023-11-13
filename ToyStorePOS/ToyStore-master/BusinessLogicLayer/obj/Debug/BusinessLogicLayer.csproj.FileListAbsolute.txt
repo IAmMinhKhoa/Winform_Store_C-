@@ -1,0 +1,107 @@
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\DTO.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\bin\Debug\DTO.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\DTO.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\bin\Debug\DTO.pdb
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+E:\Đồ Án 1\QuanLyCuaHangBanDoChoi - Final - Copy\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\DTO.dll
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\bin\Debug\DTO.pdb
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csprojAssemblyReference.cache
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\khuon\Source\Repos\khuongpro2000\ToyStore\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\DTO.dll
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\bin\Debug\DTO.pdb
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+C:\Users\Khuong Nguyen\Desktop\ToyStore-master\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\BusinessLogicLayer.pdb
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\DataAccessLayer.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\DTO.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\DataAccessLayer.pdb
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\DTO.pdb
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.csproj.CopyComplete
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\obj\Debug\BusinessLogicLayer.pdb
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\EnvDTE.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\stdole.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Học Tập\C#\ToyStorePOS\ToyStorePOS\ToyStore-master\BusinessLogicLayer\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
