@@ -127,6 +127,20 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                             AddControlsIntoPanel(ucTL);
                         }
                         break;
+                    case "ucHoaDon":
+                        {
+                            ucHoaDon ucHD = new ucHoaDon();
+                            ucHD.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucHD);
+                        }
+                        break;
+                    case "ucPhieuNhap":
+                        {
+                            ucPhieuNhap ucPN = new ucPhieuNhap();
+                            ucPN.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucPN);
+                        }
+                        break;
                 }
             }));
 
@@ -413,6 +427,52 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             else
             {
                 btnNhapSanPham.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnHoaDon);
+            if (btnHoaDon.ForeColor == Color.White)
+            {
+                btnHoaDon.ForeColor = Color.FromArgb(255, 255, 254);
+                btnHoaDon.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnNhapSanPham);
+                AddControl("ucHoaDon");
+            }
+            if (btnHoaDon.ForeColor == Color.White)
+            {
+                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
+        }
+
+        private void btnPhieuNhap_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnPhieuNhap);
+            if (btnPhieuNhap.ForeColor == Color.White)
+            {
+                btnPhieuNhap.ForeColor = Color.FromArgb(255, 255, 254);
+                btnPhieuNhap.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnNhapSanPham);
+                AddControl("ucPhieuNhap");
+            }
+            if (btnPhieuNhap.ForeColor == Color.White)
+            {
+                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.White;
             }
             Cursor = Cursors.Default;
         }

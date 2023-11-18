@@ -26,6 +26,30 @@ namespace DataAccessLayer
             }
         }
         private HoaDonDL() { }
+        #region Lấy Danh Sách Hóa Đơn
+        public DataTable LayDanhSachHoaDon()
+        {
+            try
+            {
+                string sql = "SELECT SOHD AS 'Số Hóa Đơn', " +
+                    "kh.HOTEN AS 'Họ Tên Khách Hàng', " +
+                    "nv.HOTEN AS 'Họ Tên Nhân Viên', " +
+                    "NGAYLAP AS 'Ngày Lập'," +
+                    "THANHTIEN AS 'Thành Tiền'," +
+                    "DATHANHTOAN AS 'Đã Thanh Toán'," +
+                    "TIENKHACHHANGTRA AS 'Tiền Khách Hàng Trả'," +
+                    "TIENTHUA AS 'Tiền Thối' from HoaDon hd, KHACHHANG kh, NHANVIEN nv where hd.MAKH = kh.MAKH and hd.MANV = nv.MANV";
+                DataTable dt = new DataTable();
+                dt = DataProvider.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
 
         #region Thêm Hóa Đơn
         public bool ThemHoaDon(HoaDonDTO hdDTO)

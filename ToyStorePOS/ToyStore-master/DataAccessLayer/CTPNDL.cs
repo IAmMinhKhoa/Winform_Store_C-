@@ -71,5 +71,22 @@ namespace DataAccessLayer
             }
         }
         #endregion
+        #region Lấy Danh Sách Chi Tiết Phiếu Nhập 2
+        public DataTable GetDanhSachPhieuNhap2(int MAPN)
+        {
+            try
+            {
+                string sql = "SELECT TENSP as 'Tên Sản Phẩm', ctpn.SOLUONG as 'Số Lượng', ctpn.DONGIANHAP as 'Đơn Giá Nhập' from CHITIETPHIEUNHAP ctpn, SANPHAM sp where ctpn.MASP = sp.MASP and MAPHIEU = " + MAPN;
+                DataTable dt = new DataTable();
+                dt = DataProvider.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
     }
 }

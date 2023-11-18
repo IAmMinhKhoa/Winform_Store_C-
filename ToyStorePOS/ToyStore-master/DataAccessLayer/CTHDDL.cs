@@ -24,6 +24,25 @@ namespace DataAccessLayer
             }
         }
         private CTHDDL() { }
+        #region Lấy Danh Sách Chi Tiết Hóa Đơn
+        public DataTable LayDanhSachChiTietHoaDonTheoMaHD(int MaHD)
+        {
+            try
+            {
+                string sql = string.Format("select Tensp As 'Tên Sản Phẩm'," +
+                    "cthd.soluong As 'Số lượng'" +
+                    "from CTHD, SANPHAM sp where cthd.masp = sp.masp and CTHD.SoHD = {0}", MaHD);
+                DataTable dt = new DataTable();
+                dt = DataProvider.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
 
         #region Thêm Chi Tiết Hóa Đơn
         public bool ThemCTHD(DataTable dt, int SOHD, decimal THANHTIEN)
