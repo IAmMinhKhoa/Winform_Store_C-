@@ -62,12 +62,13 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@MALOAI", nvDTO.maloainv);
                 cmd.Connection = con;
                 int rows = cmd.ExecuteNonQuery();
-                int newMANV = Convert.ToInt32(cmd.ExecuteScalar());
+                int newMANV = GetMaNVMax();
                 nvDTO.manv = newMANV;
 
                 ThemPhanQuyenChoNVMoi(nvDTO);
+                
                 ThemTaiKhoanChoNVMoi(nvDTO);
-
+                Console.WriteLine(newMANV + "con cjmvwjfnfjenjnfef");
 
                 DataProvider.Disconnect(con);
                 if (rows > 0)
@@ -78,6 +79,7 @@ namespace DataAccessLayer
                 {
                     return false;
                 }
+
             }
             catch (Exception ex)
             {

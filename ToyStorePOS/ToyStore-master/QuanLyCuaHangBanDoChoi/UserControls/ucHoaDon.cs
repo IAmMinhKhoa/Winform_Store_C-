@@ -120,6 +120,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             dgvHTCTHD.DataSource = data;
         }
 
+        private void dgvHoaDon_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         public ucHoaDon()
         {
             InitializeComponent();

@@ -21,9 +21,9 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             InitializeComponent();
             timerTime.Start();
             PanelWidth = panelLeft.Width;
-           
+
         }
-        
+
         ColorProgressBar.ColorProgressBar ProgressBar;
         Label lblPhanTram;
         string ucName;
@@ -42,34 +42,34 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             ucProgressbar ucprogress = new ucProgressbar();
             ucprogress.Dock = DockStyle.Fill;
             panelControls.Controls.Add(ucprogress);
-           // panelControls.Controls["ucProgressBar"].BringToFront();
+            // panelControls.Controls["ucProgressBar"].BringToFront();
             //Ánh xạ lên biến toàn cục
             ProgressBar = ucprogress.progressLoading;
             lblPhanTram = ucprogress.lblPhanTram;
 
             //taskLoadProgressBar = new Task(LoadProgressBar);
             taskLoadUserControl = new Task(LoadUserControl);
-           // taskLoadProgressBar.Start();
+            // taskLoadProgressBar.Start();
             taskLoadUserControl.Start();
         }
 
-       /* public void LoadProgressBar()
-        {
-            for (int i = 0; i <= 100; i++)
-            {
-                //Tách ra khỏi Thread chính
-                ProgressBar.Invoke(new MethodInvoker(delegate
-                {
-                    ProgressBar.Value = i;
-                }));
+        /* public void LoadProgressBar()
+         {
+             for (int i = 0; i <= 100; i++)
+             {
+                 //Tách ra khỏi Thread chính
+                 ProgressBar.Invoke(new MethodInvoker(delegate
+                 {
+                     ProgressBar.Value = i;
+                 }));
 
-                //Tách ra khỏi Thread chính
-                lblPhanTram.Invoke(new MethodInvoker(delegate
-                {
-                    lblPhanTram.Text = i.ToString() + "%";
-                }));
-            }
-        }*/
+                 //Tách ra khỏi Thread chính
+                 lblPhanTram.Invoke(new MethodInvoker(delegate
+                 {
+                     lblPhanTram.Text = i.ToString() + "%";
+                 }));
+             }
+         }*/
 
         public void LoadUserControl()
         {
@@ -127,6 +127,20 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                             AddControlsIntoPanel(ucTL);
                         }
                         break;
+                    case "ucPhieuNhap":
+                        {
+                            ucPhieuNhap ucPN = new ucPhieuNhap();
+                            ucPN.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucPN);
+                        }
+                        break;
+                    case "ucHoaDon":
+                        {
+                            ucHoaDon ucHD = new ucHoaDon();
+                            ucHD.Dock = DockStyle.Fill;
+                            AddControlsIntoPanel(ucHD);
+                        }
+                        break;
                 }
             }));
 
@@ -139,7 +153,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (dr == DialogResult.Yes)
                 this.Close();
             else
-                return;          
+                return;
             frmDangNhap frm = new frmDangNhap();
             frm.Show();
         }
@@ -156,7 +170,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             moveSidePanel(btnTrangChu);
             if (btnTrangChu.ForeColor == Color.White)
             {
-                btnTrangChu.ForeColor = Color.FromArgb(255,255,254);
+                btnTrangChu.ForeColor = Color.FromArgb(255, 255, 254);
                 btnTrangChu.BackColor = Color.FromArgb(8, 133, 204);
 
                 check_reset(btnTrangChu);
@@ -174,12 +188,12 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             {
                 btnTrangChu.FlatAppearance.MouseDownBackColor = Color.White;
             }
-            
+
 
             Cursor = Cursors.Default;
 
         }
-        
+
 
         private void AddControlsIntoPanel(Control c)
         {
@@ -199,7 +213,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                     {
                         if (btn.BackColor != Color.White)
                         {
-                            btn.BackColor = Color.FromArgb(17,145,249);
+                            btn.BackColor = Color.FromArgb(17, 145, 249);
                             btn.ForeColor = Color.White;
                             //btn.Image = (Image)Properties.Resources.ResourceManager.GetObject(btn.AccessibleName + "_blue");
                         }
@@ -234,13 +248,13 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         private void button8_Click(object sender, EventArgs e)
         {
-           /* Cursor = Cursors.AppStarting;
-            timerPanel.Start();
-            Cursor = Cursors.Default;*/
+            /* Cursor = Cursors.AppStarting;
+             timerPanel.Start();
+             Cursor = Cursors.Default;*/
         }
 
         int PanelWidth;
-       // bool isCollapsed;
+        // bool isCollapsed;
 
         /*private void timerPanel_Tick(object sender, EventArgs e)
         {
@@ -364,7 +378,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             }
             Cursor = Cursors.Default;
         }
-        
+
         private void frmChinh_Load(object sender, EventArgs e)
         {
             //byte[] img = NhanVienBL.GetInstance.GetHinhNhanVien(1)‌;
@@ -396,7 +410,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.WindowState=FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;
         }
 
         private void btnNhapSanPham_Click(object sender, EventArgs e)
@@ -422,6 +436,52 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             Cursor = Cursors.Default;
         }
 
-        
+        private void btnPhieuNhap_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnPhieuNhap);
+            if (btnPhieuNhap.ForeColor == Color.White)
+            {
+                btnPhieuNhap.ForeColor = Color.FromArgb(255, 255, 254);
+                btnPhieuNhap.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnPhieuNhap);
+                AddControl("ucPhieuNhap");
+            }
+            if (btnPhieuNhap.ForeColor == Color.White)
+            {
+                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+            Cursor = Cursors.AppStarting;
+            moveSidePanel(btnHoaDon);
+            if (btnHoaDon.ForeColor == Color.White)
+            {
+                btnHoaDon.ForeColor = Color.FromArgb(255, 255, 254);
+                btnHoaDon.BackColor = Color.FromArgb(8, 133, 204);
+
+                check_reset(btnHoaDon);
+                AddControl("ucHoaDon");
+            }
+            if (btnHoaDon.ForeColor == Color.White)
+            {
+                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+            }
+            else
+            {
+                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.White;
+            }
+            Cursor = Cursors.Default;
+        }
+
+
     }
 }

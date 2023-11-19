@@ -594,3 +594,5 @@ D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanL
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\PresentationLayer.csproj.CopyComplete
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.exe
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.pdb
+D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.UserControls.ucPhieuNhap.resources
+D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.UserControls.ucHoaDon.resources
