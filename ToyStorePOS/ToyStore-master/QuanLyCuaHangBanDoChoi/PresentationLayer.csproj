@@ -216,6 +216,12 @@
     <Compile Include="UserControls\ucBanSanPham.Designer.cs">
       <DependentUpon>ucBanSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\ucPhieuNhap.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucPhieuNhap.Designer.cs">
+      <DependentUpon>ucPhieuNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\ucKhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -278,6 +284,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucHoaDon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucHoaDon.Designer.cs">
+      <DependentUpon>ucHoaDon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Forms\frmChinh.resx">
       <DependentUpon>frmChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -315,6 +327,9 @@
     <EmbeddedResource Include="UserControls\ucBanSanPham.resx">
       <DependentUpon>ucBanSanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\ucPhieuNhap.resx">
+      <DependentUpon>ucPhieuNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControls\ucKhachHang.resx">
       <DependentUpon>ucKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -349,6 +364,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControls\ucHoaDon.resx">
+      <DependentUpon>ucHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

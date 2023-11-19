@@ -70,6 +70,23 @@ namespace DataAccessLayer
             }
         }
         #endregion
+        #region Lấy Danh Sách Phiếu Nhập 2
+        public DataTable GetDanhSachPhieuNhap2()
+        {
+            try
+            {
+                string sql = "SELECT MAPHIEU as 'Mã Phiếu', TENNCC as 'Tên Nhà Cung Cấp', HOTEN as 'Tên Nhân Viên', NGAYLAP as 'Ngày Lập', DANHAP as 'Đã Nhận' from PHIEUNHAP pn, NCC, NHANVIEN nv where pn.MANCC = NCC.MANCC and pn.MANV = nv.MANV";
+                DataTable dt = new DataTable();
+                dt = DataProvider.GetTable(sql);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi database: " + ex.Message);
+                return null;
+            }
+        }
+        #endregion
 
         #region Xác Nhận Phiếu Nhập
         public bool XacNhan(int MaPhieu)

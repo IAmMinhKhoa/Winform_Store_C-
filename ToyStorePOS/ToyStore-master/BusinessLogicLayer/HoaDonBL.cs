@@ -24,6 +24,10 @@ namespace BusinessLogicLayer
             }
         }
         private HoaDonBL() { }
+        public DataTable LayDanhSachHoaDon()
+        {
+            return HoaDonDL.GetInstance.LayDanhSachHoaDon();
+        }
         public bool ThemHoaDon(HoaDonDTO hdDTO)
         {
             return HoaDonDL.GetInstance.ThemHoaDon(hdDTO);

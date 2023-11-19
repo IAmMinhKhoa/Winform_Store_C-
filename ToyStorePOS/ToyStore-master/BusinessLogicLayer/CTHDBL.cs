@@ -28,5 +28,9 @@ namespace BusinessLogicLayer
         {
             return CTHDDL.GetInstance.ThemCTHD(dt, SOHD,THANHTIEN);
         }
+        public DataTable LayDanhSachChiTietHoaDonTheoMaHD(int Mahd)
+        {
+            return CTHDDL.GetInstance.LayDanhSachChiTietHoaDonTheoMaHD(Mahd);
+        }
     }
 }

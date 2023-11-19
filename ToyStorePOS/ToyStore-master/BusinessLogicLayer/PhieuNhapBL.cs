@@ -36,6 +36,10 @@ namespace BusinessLogicLayer
         {
             return PhieuNhapDL.GetInstance.GetDanhSachPhieuNhap();
         }
+        public DataTable GetDanhSachPhieuNhap2()
+        {
+            return PhieuNhapDL.GetInstance.GetDanhSachPhieuNhap2();
+        }
         public bool XacNhan(int MaPhieu)
         {
             return PhieuNhapDL.GetInstance.XacNhan(MaPhieu);

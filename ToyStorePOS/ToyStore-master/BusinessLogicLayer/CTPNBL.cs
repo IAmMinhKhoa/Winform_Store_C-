@@ -27,5 +27,9 @@ namespace BusinessLogicLayer
         {
             return CTPNDL.GetInstance.ThemCTPN(dt, MAPN);
         }
+        public DataTable GetDanhSachChiTietPhieuNhap(int MaPN)
+        {
+            return CTPNDL.GetInstance.GetDanhSachPhieuNhap2(MaPN);
+        }
     }
 }
