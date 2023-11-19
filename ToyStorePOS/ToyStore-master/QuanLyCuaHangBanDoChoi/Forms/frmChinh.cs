@@ -134,7 +134,12 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult dr = MessageBox.Show("Bạn có chắc chắn muốn thoát không?", "Thoát", MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
+            if (dr == DialogResult.Yes)
+                this.Close();
+            else
+                return;          
             frmDangNhap frm = new frmDangNhap();
             frm.Show();
         }
@@ -416,5 +421,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             }
             Cursor = Cursors.Default;
         }
+
+        
     }
 }

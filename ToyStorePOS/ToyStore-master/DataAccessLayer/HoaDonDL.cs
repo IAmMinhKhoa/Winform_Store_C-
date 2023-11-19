@@ -107,18 +107,21 @@ namespace DataAccessLayer
         public DataSet InHoaDon(int SOHD)
         {
             try
-            {
+            {                
                 string sql = "SELECT * FROM V_HoaDon WHERE SOHD="+ SOHD + "";
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter(sql, DataProvider.Openconnect());
-                da.Fill(ds,"DataTable_HoaDon");
+                
+                da.Fill(ds,"DataTable_HoaDon");               
                 ds.Tables[0].Columns.Add("DOCSOTIEN");
+                
                 for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
-                    double TongTien = Convert.ToDouble(ds.Tables[0].Rows[i]["TONGHOADON"]);
-                    string soTienChu = So_chu(TongTien);
-                    ds.Tables[0].Rows[i]["DOCSOTIEN"] = "("+soTienChu+")";
+                    string TongTien = ds.Tables[0].Rows[i]["TONGHOADON"].ToString();
+                    string soTienChu = "";
+                    ds.Tables[0].Rows[i]["DOCSOTIEN"] = ""+soTienChu+"";
                 }
+                
                 return ds;
             }
             catch (Exception)
