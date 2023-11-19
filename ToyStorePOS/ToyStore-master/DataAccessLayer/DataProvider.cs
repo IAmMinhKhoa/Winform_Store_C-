@@ -13,11 +13,15 @@ namespace DataAccessLayer
     {
         public static SqlConnection Openconnect()
         {
-            string sChuoiKetNoi = @"Data Source=LAPTOP-AFOP5TPF\SQLSERVER;Initial Catalog=CH_NOITHAT_DB;Integrated Security=True";
+            //string sChuoiKetNoi = @"Data Source=LAPTOP-AFOP5TPF\SQLSERVER;Initial Catalog=CH_NOITHAT_DB;Integrated Security=True";
+
+            string sChuoiKetNoi = @"Data Source=MYNAMEISKHOA\MINHKHOA666;Initial Catalog=CH_NOITHAT_DB;Integrated Security=True";
             SqlConnection con = new SqlConnection(sChuoiKetNoi);
+            Console.WriteLine(con);
             con.Open();
             if (con != null)
             {
+                Console.WriteLine("connect duoc roi do bro");
                 return con;
             }
             else
