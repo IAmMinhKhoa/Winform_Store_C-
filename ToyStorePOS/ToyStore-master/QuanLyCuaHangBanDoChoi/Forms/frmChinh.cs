@@ -171,7 +171,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnTrangChu.ForeColor == Color.White)
             {
                 btnTrangChu.ForeColor = Color.FromArgb(255, 255, 254);
-                btnTrangChu.BackColor = Color.FromArgb(8, 133, 204);
+                btnTrangChu.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnTrangChu);
                 AddControl("ucTrangChu");
@@ -211,7 +211,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                     {
                         if (btn.BackColor != Color.White)
                         {
-                            btn.BackColor = Color.FromArgb(17, 145, 249);
+                            btn.BackColor = Color.FromArgb(255, 122, 0);
                             btn.ForeColor = Color.White;
                             //btn.Image = (Image)Properties.Resources.ResourceManager.GetObject(btn.AccessibleName + "_blue");
                         }
@@ -228,14 +228,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnBanSanPham.ForeColor == Color.White)
             {
                 btnBanSanPham.ForeColor = Color.FromArgb(255, 255, 254);
-                btnBanSanPham.BackColor = Color.FromArgb(8, 133, 204);
+                btnBanSanPham.BackColor = Color.FromArgb(255, 122, 0); //backg
 
                 check_reset(btnBanSanPham);
                 AddControl("ucBanSanPham");
             }
             if (btnBanSanPham.ForeColor == Color.White)
             {
-                btnBanSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnBanSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -291,14 +291,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnSanPham.ForeColor == Color.White)
             {
                 btnSanPham.ForeColor = Color.FromArgb(255, 255, 254);
-                btnSanPham.BackColor = Color.FromArgb(8, 133, 204);
+                btnSanPham.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnSanPham);
                 AddControl("ucSanPham");
             }
             if (btnSanPham.ForeColor == Color.White)
             {
-                btnSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -314,14 +314,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnNhanVien.ForeColor == Color.White)
             {
                 btnNhanVien.ForeColor = Color.FromArgb(255, 255, 254);
-                btnNhanVien.BackColor = Color.FromArgb(8, 133, 204);
+                btnNhanVien.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnNhanVien);
                 AddControl("ucNhanVien");
             }
             if (btnNhanVien.ForeColor == Color.White)
             {
-                btnNhanVien.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnNhanVien.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -337,14 +337,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnKhachHang.ForeColor == Color.White)
             {
                 btnKhachHang.ForeColor = Color.FromArgb(255, 255, 254);
-                btnKhachHang.BackColor = Color.FromArgb(8, 133, 204);
+                btnKhachHang.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnKhachHang);
                 AddControl("ucKhachHang");
             }
             if (btnKhachHang.ForeColor == Color.White)
             {
-                btnKhachHang.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnKhachHang.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -360,7 +360,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnThietLap.ForeColor == Color.White)
             {
                 btnThietLap.ForeColor = Color.FromArgb(255, 255, 254);
-                btnThietLap.BackColor = Color.FromArgb(8, 133, 204);
+                btnThietLap.BackColor = Color.FromArgb(255, 122, 0);
                 //btnThietLap.Image = Properties.Resources.thietlap_black;
 
                 check_reset(btnThietLap);
@@ -368,7 +368,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             }
             if (btnThietLap.ForeColor == Color.White)
             {
-                btnThietLap.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnThietLap.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -418,14 +418,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnNhapSanPham.ForeColor == Color.White)
             {
                 btnNhapSanPham.ForeColor = Color.FromArgb(255, 255, 254);
-                btnNhapSanPham.BackColor = Color.FromArgb(8, 133, 204);
+                btnNhapSanPham.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnNhapSanPham);
                 AddControl("ucNhapSanPham");
             }
             if (btnNhapSanPham.ForeColor == Color.White)
             {
-                btnNhapSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnNhapSanPham.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -441,14 +441,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnPhieuNhap.ForeColor == Color.White)
             {
                 btnPhieuNhap.ForeColor = Color.FromArgb(255, 255, 254);
-                btnPhieuNhap.BackColor = Color.FromArgb(8, 133, 204);
+                btnPhieuNhap.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnPhieuNhap);
                 AddControl("ucPhieuNhap");
             }
             if (btnPhieuNhap.ForeColor == Color.White)
             {
-                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnPhieuNhap.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -464,14 +464,14 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             if (btnHoaDon.ForeColor == Color.White)
             {
                 btnHoaDon.ForeColor = Color.FromArgb(255, 255, 254);
-                btnHoaDon.BackColor = Color.FromArgb(8, 133, 204);
+                btnHoaDon.BackColor = Color.FromArgb(255, 122, 0);
 
                 check_reset(btnHoaDon);
                 AddControl("ucHoaDon");
             }
             if (btnHoaDon.ForeColor == Color.White)
             {
-                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.FromArgb(8, 133, 204);
+                btnHoaDon.FlatAppearance.MouseDownBackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
