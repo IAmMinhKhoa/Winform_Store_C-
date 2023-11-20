@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucTrangChu));
             this.chartTopSP = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chartDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -85,11 +85,11 @@
             // 
             // chartTopSP
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartTopSP.ChartAreas.Add(chartArea3);
+            chartArea1.Name = "ChartArea1";
+            this.chartTopSP.ChartAreas.Add(chartArea1);
             this.chartTopSP.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend3.Name = "Legend1";
-            this.chartTopSP.Legends.Add(legend3);
+            legend1.Name = "Legend1";
+            this.chartTopSP.Legends.Add(legend1);
             this.chartTopSP.Location = new System.Drawing.Point(743, 78);
             this.chartTopSP.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartTopSP.Name = "chartTopSP";
@@ -100,11 +100,11 @@
             // chartDoanhThu
             // 
             this.chartDoanhThu.BorderlineColor = System.Drawing.Color.Black;
-            chartArea4.Name = "ChartArea1";
-            this.chartDoanhThu.ChartAreas.Add(chartArea4);
+            chartArea2.Name = "ChartArea1";
+            this.chartDoanhThu.ChartAreas.Add(chartArea2);
             this.chartDoanhThu.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend4.Name = "Legend1";
-            this.chartDoanhThu.Legends.Add(legend4);
+            legend2.Name = "Legend1";
+            this.chartDoanhThu.Legends.Add(legend2);
             this.chartDoanhThu.Location = new System.Drawing.Point(4, 78);
             this.chartDoanhThu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chartDoanhThu.Name = "chartDoanhThu";
@@ -180,7 +180,7 @@
             this.lblDoanhThu.Name = "lblDoanhThu";
             this.lblDoanhThu.Size = new System.Drawing.Size(731, 63);
             this.lblDoanhThu.TabIndex = 3;
-            this.lblDoanhThu.Text = "Biểu Đồ Doanh Thu";
+            this.lblDoanhThu.Text = "Doanh Thu";
             this.lblDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel10
