@@ -188,8 +188,6 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             {
                 btnTrangChu.FlatAppearance.MouseDownBackColor = Color.White;
             }
-
-
             Cursor = Cursors.Default;
 
         }

@@ -39,9 +39,10 @@
             this.txtTenNCC.BackColor = System.Drawing.Color.White;
             this.txtTenNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.txtTenNCC.ForeColor = System.Drawing.Color.Black;
-            this.txtTenNCC.Location = new System.Drawing.Point(111, 62);
+            this.txtTenNCC.Location = new System.Drawing.Point(166, 95);
+            this.txtTenNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTenNCC.Name = "txtTenNCC";
-            this.txtTenNCC.Size = new System.Drawing.Size(272, 26);
+            this.txtTenNCC.Size = new System.Drawing.Size(406, 35);
             this.txtTenNCC.TabIndex = 9;
             // 
             // label2
@@ -49,9 +50,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(37, 64);
+            this.label2.Location = new System.Drawing.Point(56, 98);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.Size = new System.Drawing.Size(114, 29);
             this.label2.TabIndex = 11;
             this.label2.Text = "Tên NCC";
             // 
@@ -63,9 +65,10 @@
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_close_window_32px;
-            this.button9.Location = new System.Drawing.Point(446, 1);
+            this.button9.Location = new System.Drawing.Point(669, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(33, 33);
+            this.button9.Size = new System.Drawing.Size(50, 51);
             this.button9.TabIndex = 13;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = true;
@@ -73,7 +76,7 @@
             // 
             // btnThemNCC
             // 
-            this.btnThemNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnThemNCC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.btnThemNCC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnThemNCC.FlatAppearance.BorderSize = 0;
             this.btnThemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -81,9 +84,10 @@
             this.btnThemNCC.ForeColor = System.Drawing.Color.White;
             this.btnThemNCC.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_add_32px_1;
             this.btnThemNCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemNCC.Location = new System.Drawing.Point(287, 99);
+            this.btnThemNCC.Location = new System.Drawing.Point(430, 152);
+            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThemNCC.Name = "btnThemNCC";
-            this.btnThemNCC.Size = new System.Drawing.Size(96, 37);
+            this.btnThemNCC.Size = new System.Drawing.Size(144, 57);
             this.btnThemNCC.TabIndex = 10;
             this.btnThemNCC.Text = "Thêm";
             this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,15 +96,16 @@
             // 
             // frmThemNCC
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(480, 159);
+            this.ClientSize = new System.Drawing.Size(720, 245);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.btnThemNCC);
             this.Controls.Add(this.txtTenNCC);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmThemNCC";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThemNCC";

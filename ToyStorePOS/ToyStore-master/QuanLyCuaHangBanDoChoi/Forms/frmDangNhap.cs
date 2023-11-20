@@ -163,7 +163,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             if (txtTenDangNhap.Text != "" && txtMatKhau.Text != "")
             {
-                btnDangNhap.BackColor = Color.FromArgb(0, 122, 204);
+                btnDangNhap.BackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {
@@ -175,7 +175,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             if (txtTenDangNhap.Text != "" && txtMatKhau.Text != "")
             {
-                btnDangNhap.BackColor = Color.FromArgb(0, 122, 204);
+                btnDangNhap.BackColor = Color.FromArgb(255, 122, 0);
             }
             else
             {

@@ -33,7 +33,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             dgvKhachHang.ClearSelection();
         }
 
-        private void btnThemSP_Click(object sender, EventArgs e)
+        private void btnThemKH_Click(object sender, EventArgs e)  //Thêm khách hàng
         {
             txtDoanhSo.Text = "0";
 
@@ -242,7 +242,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 frm.ShowDialog();
             }
         }
-        int makh = 0;
+        int makh = 0;  //Kiểm soát khách hàng đang đc chọn để cập nhật,xoá 
         private void btnXoa_Click(object sender, EventArgs e)
         {
             if (KhachHangBL.GetInstance.XoaKhachHang(makh.ToString()))
@@ -264,7 +264,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             LamMoi();
         }
 
-        private void txtTenNV_TextChanged(object sender, EventArgs e)
+        private void txtTenNV_TextChanged(object sender, EventArgs e)  // Xử lý khi nhập vào textbox tìm kiếm tên KH
         {
             if (txtTenKH.Text != "")
             {
