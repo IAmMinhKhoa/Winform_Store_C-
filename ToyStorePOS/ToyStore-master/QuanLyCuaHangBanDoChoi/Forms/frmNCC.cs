@@ -56,7 +56,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                         nccDTO.SDT = txtSDT.Text;
                         if (NCCBL.GetInstance.ThemNCCFull(nccDTO))
                         {
-                            this.Alert("Thêm thành công...", frmPopupNotification.enmType.Success);
+                            MessageBox.Show("Thêm thành công");
                             LoadDataGridView();
                             txtDiaChi.Text = "";
                             txtSDT.Text = "";
@@ -86,12 +86,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                 frm.ShowDialog();
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+      
 
         private void LoadDataGridView()
         {
@@ -142,7 +137,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                         nccDTO.SDT = txtSDT.Text;
                         if (NCCBL.GetInstance.CapNhatNCC(nccDTO))
                         {
-                            this.Alert("Đã cập nhật thành công...", frmPopupNotification.enmType.Success);
+                            MessageBox.Show("Thêm thành công gòi");
                             LoadDataGridView();
                             txtDiaChi.Text = "";
                             txtSDT.Text = "";
@@ -178,7 +173,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             if (NCCBL.GetInstance.XoaNCC(mancc.ToString()))
             {
-                this.Alert("Đã ngừng hợp tác thành công...", frmPopupNotification.enmType.Success);
+                MessageBox.Show("Ngừng hợp tác thành kong");
                 txtDiaChi.Text = "";
                 txtSDT.Text = "";
                 txtTen.Text = "";

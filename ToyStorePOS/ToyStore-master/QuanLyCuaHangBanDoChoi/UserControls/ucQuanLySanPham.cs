@@ -172,7 +172,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 {
                     LamMoi();
                     LoadDataGridViewTheoBoLoc();
-                    this.Alert("Đã ngừng kinh doanh...", frmPopupNotification.enmType.Success);
+                    MessageBox.Show("Ngừng bán cái sản phẩm này");
                 }
             }
             else
@@ -205,12 +205,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 return ms.ToArray();
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+        
         private void btnThemSP_Click(object sender, EventArgs e)
         {
             if (CheckControls())
@@ -245,7 +240,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
                                 if (SanPhamBL.GetInstance.ThemSanPham(spDTO))
                                 {
-                                    this.Alert("Đã thêm sản phẩm thành công...", frmPopupNotification.enmType.Success);
+                                    MessageBox.Show("Thêm sản phẩm thành công");
                                     LoadDataGridViewTheoBoLoc();
                                     LamMoi();
                                 }
@@ -335,11 +330,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                                 {
                                     LoadDataGridViewTheoBoLoc();
                                     LamMoi();
-                                    this.Alert("Cập nhật sản phẩm thảnh công...", frmPopupNotification.enmType.Success);
+                                    MessageBox.Show("Cập nhật thành công");
                                 }
                                 else
                                 {
-                                    this.Alert("Cập nhật thất bại...", frmPopupNotification.enmType.Success);
+                                    MessageBox.Show("Cập nhật thất bại");
                                 }
                             }
                             else
@@ -631,6 +626,18 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     // Hiển thị thông báo lỗi
                     MessageBox.Show("Giá trị không hợp lệ. Vui lòng nhập số. <from txtgianhap>");
                     txtGiaNhap.Clear();
+                }
+                else
+                {
+                    if (txtLoiNhuan.Text != "")
+                    {
+                        int n = int.Parse(txtGiaNhap.Text) + ((int.Parse(txtGiaNhap.Text) * int.Parse(txtLoiNhuan.Text) / 100));
+                        txtGiaBan.Text = n.ToString();
+                    }
+                    else
+                    {
+                        txtGiaBan.Text = txtGiaNhap.Text;
+                    }
                 }
                
 

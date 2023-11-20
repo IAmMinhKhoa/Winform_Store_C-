@@ -154,7 +154,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                                 {
                                     LoadDataGridViewTheoBoLoc();
                                     LamMoi();
-                                    this.Alert("Thêm nhân viên thành công...", frmPopupNotification.enmType.Success);
+                                    MessageBox.Show("Vừa thêm 1 nole vào công ty");
                                 }
                             }
                             else
@@ -276,7 +276,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 LamMoi();
                 LoadDataGridViewTheoBoLoc();
-                this.Alert("Sa thải nhân viên thành công...", frmPopupNotification.enmType.Success);
+                MessageBox.Show("Đuổi việc thằng nhóc này thành công");
             }
         }
 
@@ -311,7 +311,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                                 if (frmDangNhap.Quyen == 1)
                                     LoadDataGridViewTheoBoLoc();
                                 LamMoi();
-                                this.Alert("Cập nhật thành công...", frmPopupNotification.enmType.Success);
+                                MessageBox.Show("Cập nhật thành công");
                             }
                         }
                         else
@@ -393,12 +393,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             txtTenNV.Text = "";
             cboLocLoaiNhanVien.SelectedIndex = cboLocLoaiNhanVien.Items.Count - 1;
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+        
 
         private void label1_Click(object sender, EventArgs e)
         {

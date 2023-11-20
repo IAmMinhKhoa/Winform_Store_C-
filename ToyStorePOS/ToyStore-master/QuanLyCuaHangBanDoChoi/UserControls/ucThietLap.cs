@@ -47,7 +47,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     if (TaiKhoanBL.GetInstance.CheckLogin(frmDangNhap.TenDangNhap.ToString(), txtMatKhauHienTai.Text))
                     {
                         TaiKhoanBL.GetInstance.DoiMatKhau(frmDangNhap.TenDangNhap.ToString(), txtMatKhauMoi.Text);
-                        this.Alert("Đã đổi mật khẩu thành công!", frmPopupNotification.enmType.Success);
+                        MessageBox.Show("Đổi mật khẩu thành công, mật khẩu mới là : "+ txtMatKhauMoi.Text);
                         txtNhapLai.Clear();
                         txtMatKhauMoi.Clear();
                         txtMatKhauHienTai.Clear();
@@ -70,12 +70,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 }
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+        
 
         private void txtMatKhauHienTai_TextChanged(object sender, EventArgs e)
         {

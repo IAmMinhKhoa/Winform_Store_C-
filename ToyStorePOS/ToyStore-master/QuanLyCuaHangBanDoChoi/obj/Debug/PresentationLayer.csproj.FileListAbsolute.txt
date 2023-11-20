@@ -575,7 +575,6 @@ D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanL
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmLoadImage.resources
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmLoaiSanPham.resources
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmNCC.resources
-D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmPopupNotification.resources
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThemLoaiSP.resources
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThemNCC.resources
 D:\Học Tập\C#\ToyStorePOS\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThongBao.resources

@@ -43,12 +43,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             XuLyDangNhap();
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+        
         private void XuLyDangNhap()
         {
             Cursor = Cursors.AppStarting;
@@ -60,7 +55,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
                 txtMatKhau.Text = "";
                 txtTenDangNhap.Text = "";
                 Cursor = Cursors.Default;
-                this.Alert("Đăng nhập thành công...", frmPopupNotification.enmType.Success);
+             
                 frmChinh frm = new frmChinh();
                 frm.Show();
                 this.Hide();

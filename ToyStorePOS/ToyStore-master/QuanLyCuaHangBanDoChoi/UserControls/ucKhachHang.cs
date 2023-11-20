@@ -61,7 +61,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             {
                                 LoadDgvKhachHang();
                                 LamMoi();
-                                this.Alert("Thêm khách hàng thành công...", frmPopupNotification.enmType.Success);
+                                MessageBox.Show("Thêm KH thành công");
                             }
                         }
                         else
@@ -211,7 +211,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             {
                                 LoadDgvKhachHang();
                                 LamMoi();
-                                this.Alert("Cập nhât thành công...", frmPopupNotification.enmType.Success);
+                                MessageBox.Show("Cập nhật thành công");
                             }
                         }
                         else
@@ -249,7 +249,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 LamMoi();
                 LoadDgvKhachHang();
-                this.Alert("Xóa thành công...", frmPopupNotification.enmType.Success);
+                MessageBox.Show("Xóa thành công");
             }
             else
             {
@@ -276,12 +276,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 LoadDgvKhachHang();
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+        
 
         private void txtDoanhSo_TextChanged(object sender, EventArgs e)
         {

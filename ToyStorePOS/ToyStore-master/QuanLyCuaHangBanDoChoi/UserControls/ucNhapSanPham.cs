@@ -54,7 +54,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     {
                         mapn = PhieuNhapBL.GetInstance.GetMAPNMax();
                         frmThongBao frmtt = new frmThongBao();
-                        this.Alert("Tạo phiếu nhập thành công...", frmPopupNotification.enmType.Success);
+                        MessageBox.Show("Tạo phiếu nhập rồi đấy");
 
                         btnThem.Enabled = true;
                         btnThem.BackColor = Color.FromArgb(17, 145, 249);
@@ -146,7 +146,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 dgvCTPN.Rows.Clear();
                 mapn = 0;
                 frmThongBao frmtt = new frmThongBao();
-                this.Alert("Đã hủy phiếu nhập...", frmPopupNotification.enmType.Info);
+                MessageBox.Show("Đã hủy phiếu nhập");
                 btnLuu.Enabled = false;
                 btnLuu.BackColor = Color.Gray;
                 btnHuy.Enabled = false;
@@ -186,7 +186,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
                 mapn = 0;
                 frmThongBao frmtt = new frmThongBao();
-                this.Alert("Lưu phiếu nhập thành công...", frmPopupNotification.enmType.Success);
+                MessageBox.Show("Lưu phiếu nhập thành công");
 
                 dgvPhieuNhap.DataSource = PhieuNhapBL.GetInstance.GetDanhSachPhieuNhap();
                 dgvPhieuNhap.ClearSelection();
@@ -202,12 +202,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 btnTaoPhieu.BackColor = Color.FromArgb(17, 145, 249);
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+      
         int maphieu = 0;
         private void dgvPhieuNhap_Click(object sender, EventArgs e)
         {
@@ -246,7 +241,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
             if (result)
             {
-                this.Alert("Đã xác nhận hàng đã về kho...", frmPopupNotification.enmType.Success);
+                MessageBox.Show("Số lượng đã cập nhật rồi đấy");
                 dgvPhieuNhap.DataSource = PhieuNhapBL.GetInstance.GetDanhSachPhieuNhap();
                 dgvPhieuNhap.ClearSelection();
                 btnDaNhap.Enabled = false;
@@ -262,7 +257,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (PhieuNhapBL.GetInstance.XoaPN(maphieu))
                 {
-                    this.Alert("Đã xóa phiếu nhập...", frmPopupNotification.enmType.Info);
+                    MessageBox.Show("Xóa phiếu nhập thành công");
                     dgvPhieuNhap.DataSource = PhieuNhapBL.GetInstance.GetDanhSachPhieuNhap();
                     dgvPhieuNhap.ClearSelection();
                     btnDaNhap.Enabled = false;

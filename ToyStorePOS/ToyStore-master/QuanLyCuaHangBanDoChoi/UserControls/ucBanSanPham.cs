@@ -235,7 +235,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
             btnHuy.BackColor = Color.OrangeRed;
 
-            this.Alert("Đã tạo đơn hàng...", frmPopupNotification.enmType.Info);
+            MessageBox.Show("Đã tạo đơn hàng gòi nè");
 
             txtSDT.Enabled = false;
         }
@@ -846,7 +846,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         {
             if (btnThanhToan.BackColor == Color.Gray)
                 return;
-            this.Alert("Đã thanh toán đơn hàng...", frmPopupNotification.enmType.Success);
+            MessageBox.Show("Đã thanh toán");
             this.Cursor = Cursors.AppStarting;
             if (txtTenKH.Text != "")
                 KhachHangBL.GetInstance.CapNhatDoanhSoKhachHang(makh, ThanhTien);
@@ -886,7 +886,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             btnThanhToan.BackColor = Color.Gray;
             txtSDT.Enabled = true;
 
-            this.Alert("Đã hủy đơn hàng...", frmPopupNotification.enmType.Success);
+            MessageBox.Show("Hủy thành Kong");
         }
 
         private void txtTienKHTra_TextChanged(object sender, EventArgs e)
@@ -1134,15 +1134,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         {
             if (txtTenKH.Text != "")
             {
-                this.Alert("HD: "+txtTenKH.Text+"...", frmPopupNotification.enmType.Info);
+                
+                MessageBox.Show("HD: " + txtTenKH.Text + "...");
             }
         }
-        public void Alert(string msg, frmPopupNotification.enmType type)
-        {
-            frmPopupNotification frm = new frmPopupNotification();
-            frm.TopMost = true;
-            frm.showAlert(msg, type);
-        }
+       
 
         private void btnThemMoi_Click(object sender, EventArgs e)
         {
