@@ -178,18 +178,6 @@
     <Compile Include="Forms\frmNCC.Designer.cs">
       <DependentUpon>frmNCC.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmThemLoaiSP.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmThemLoaiSP.Designer.cs">
-      <DependentUpon>frmThemLoaiSP.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmThemNCC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmThemNCC.Designer.cs">
-      <DependentUpon>frmThemNCC.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmThongBao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -304,12 +292,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNCC.resx">
       <DependentUpon>frmNCC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmThemLoaiSP.resx">
-      <DependentUpon>frmThemLoaiSP.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmThemNCC.resx">
-      <DependentUpon>frmThemNCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThongBao.resx">
       <DependentUpon>frmThongBao.cs</DependentUpon>

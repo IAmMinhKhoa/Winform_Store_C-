@@ -27,13 +27,13 @@ namespace QuanLyCuaHangBanDoChoi.Forms
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmThemNCC frm = new frmThemNCC();
+           /* frmThemNCC frm = new frmThemNCC();
             frm.ShowDialog();
             if (frm.DialogResult == DialogResult.OK)
             {
                 cboNCC.DataSource = NCCBL.GetInstance.GetDanhSachNCC();
                 cboNCC.SelectedIndex = cboNCC.Items.Count - 1;
-            }
+            }*/
         }
 
         private void btnChon_Click(object sender, EventArgs e)

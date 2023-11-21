@@ -51,7 +51,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             cboLocLoaiSP.ValueMember = "Mã Loại SP";
             cboLocLoaiSP.SelectedIndex = cboLocLoaiSP.Items.Count - 1;
         }
-        int sumpage = 0;
+
         private void LoadDanhSachSanPhamTheoBoLoc()
         {
             flowLayoutPanelSanPham.Controls.Clear();
@@ -61,6 +61,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 ucSanPham sp = new ucSanPham();
+
                 sp.spDTO.masp = int.Parse(dt.Rows[i].ItemArray[0].ToString());
                 sp.spDTO.tensp = dt.Rows[i].ItemArray[1].ToString();
                 sp.spDTO.maloaisp = dt.Rows[i].ItemArray[2].ToString();
@@ -621,6 +622,16 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }

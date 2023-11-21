@@ -63,7 +63,7 @@
             this.dgvCTHD.Controls.Add(this.dgvHTCTHD, 2, 1);
             this.dgvCTHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCTHD.Location = new System.Drawing.Point(0, 38);
-            this.dgvCTHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvCTHD.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCTHD.Name = "dgvCTHD";
             this.dgvCTHD.RowCount = 3;
             this.dgvCTHD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -78,7 +78,7 @@
             this.panel9.Controls.Add(this.lblDSHoaDon);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(4, 4);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(1170, 39);
             this.panel9.TabIndex = 8;
@@ -96,6 +96,7 @@
             this.lblDSHoaDon.TabIndex = 3;
             this.lblDSHoaDon.Text = "Danh Sách Hóa Đơn";
             this.lblDSHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblDSHoaDon.Click += new System.EventHandler(this.lblDSHoaDon_Click);
             // 
             // panel10
             // 
@@ -103,7 +104,7 @@
             this.panel10.Controls.Add(this.lblCTHoaDon);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(1182, 4);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(456, 37);
             this.panel10.TabIndex = 8;
@@ -129,7 +130,7 @@
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHoaDon.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHoaDon.Location = new System.Drawing.Point(4, 51);
-            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.ReadOnly = true;
             this.dgvHoaDon.RowHeadersWidth = 51;
@@ -145,7 +146,7 @@
             this.dgvHTCTHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHTCTHD.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvHTCTHD.Location = new System.Drawing.Point(1182, 51);
-            this.dgvHTCTHD.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHTCTHD.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHTCTHD.Name = "dgvHTCTHD";
             this.dgvHTCTHD.ReadOnly = true;
             this.dgvHTCTHD.RowHeadersWidth = 51;
@@ -159,7 +160,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.Location = new System.Drawing.Point(1579, 0);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(56, 30);
             this.btnRefresh.TabIndex = 13;
@@ -175,7 +176,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -189,7 +190,7 @@
             this.panel5.Controls.Add(this.btnRefresh);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(4, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1635, 30);
             this.panel5.TabIndex = 0;
@@ -214,7 +215,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.dgvCTHD);
             this.Controls.Add(this.tableLayoutPanel3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucHoaDon";
             this.Size = new System.Drawing.Size(1643, 514);
             this.Load += new System.EventHandler(this.usHoaDon_Load);

@@ -125,6 +125,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         }
 
+        private void lblDSHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
+
         public ucHoaDon()
         {
             InitializeComponent();

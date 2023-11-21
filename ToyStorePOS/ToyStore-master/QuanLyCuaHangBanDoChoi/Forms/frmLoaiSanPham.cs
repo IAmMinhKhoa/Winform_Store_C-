@@ -58,8 +58,8 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             lspDTO.TenLoaiSP = txtTen.Text;
             if (LoaiSanPhamBL.GetInstance.ThemLoaiSanPham(lspDTO))
             {
-                picThanhCong.Visible = true;
-                timer.Start();
+                MessageBox.Show("Thêm Thành Kong rồi á");
+
                 LoadDataGridView();
                 txtTen.Text = "";
                 b = true;
@@ -81,10 +81,10 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             if (LoaiSanPhamBL.GetInstance.NgungKinhDoanh(maloaisp.ToString()))
             {
-                picThanhCong.Visible = true;
+                MessageBox.Show("Xóa Thành Kong rồi á");
                 txtTen.Text = "";
                 LoadDataGridView();
-                timer.Start();
+               
                 b = true;
             }
 
@@ -108,16 +108,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             }
         }
         int i = 0;
-        private void timer_Tick(object sender, EventArgs e)
-        {
-            i++;
-            if (i == 30)
-            {
-                picThanhCong.Visible = false;
-                timer.Stop();
-                i = 0;
-            }
-        }
+      
 
         private void dgvLoaiSanPham_Click(object sender, EventArgs e)
         {
@@ -153,8 +144,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             lspDTO.TenLoaiSP = txtTen.Text;
             if (LoaiSanPhamBL.GetInstance.CapNhatLoaiSanPham(lspDTO))
             {
-                picThanhCong.Visible = true;
-                timer.Start();
+                MessageBox.Show("Cập Nhật Thành Kong rồi á");
                 LoadDataGridView();
                 txtTen.Text = "";
                 b = true;
@@ -164,6 +154,11 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         private void button9_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvLoaiSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -40,8 +40,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(506, 31);
+            this.label4.Size = new System.Drawing.Size(675, 38);
             this.label4.TabIndex = 56;
             this.label4.Text = "Thông Báo";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -52,9 +53,10 @@
             this.lblThongBao.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblThongBao.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblThongBao.ForeColor = System.Drawing.Color.Black;
-            this.lblThongBao.Location = new System.Drawing.Point(0, 31);
+            this.lblThongBao.Location = new System.Drawing.Point(0, 38);
+            this.lblThongBao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThongBao.Name = "lblThongBao";
-            this.lblThongBao.Size = new System.Drawing.Size(506, 190);
+            this.lblThongBao.Size = new System.Drawing.Size(675, 234);
             this.lblThongBao.TabIndex = 57;
             this.lblThongBao.Text = "Thông Báo";
             this.lblThongBao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -66,9 +68,10 @@
             this.btnOK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOK.ForeColor = System.Drawing.Color.White;
-            this.btnOK.Location = new System.Drawing.Point(399, 175);
+            this.btnOK.Location = new System.Drawing.Point(532, 215);
+            this.btnOK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(95, 34);
+            this.btnOK.Size = new System.Drawing.Size(127, 42);
             this.btnOK.TabIndex = 59;
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = false;
@@ -76,14 +79,15 @@
             // 
             // frmThongBao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(506, 221);
+            this.ClientSize = new System.Drawing.Size(675, 272);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.lblThongBao);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmThongBao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmThongBao";

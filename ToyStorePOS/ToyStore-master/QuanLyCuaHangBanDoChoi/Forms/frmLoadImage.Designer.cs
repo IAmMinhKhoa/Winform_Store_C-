@@ -55,9 +55,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Black;
             this.groupBox1.Location = new System.Drawing.Point(5, 42);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(800, 123);
             this.groupBox1.TabIndex = 58;
             this.groupBox1.TabStop = false;
@@ -71,7 +71,7 @@
             this.btnChon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChon.ForeColor = System.Drawing.Color.White;
             this.btnChon.Location = new System.Drawing.Point(352, 48);
-            this.btnChon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChon.Margin = new System.Windows.Forms.Padding(4);
             this.btnChon.Name = "btnChon";
             this.btnChon.Size = new System.Drawing.Size(91, 37);
             this.btnChon.TabIndex = 5;
@@ -89,7 +89,7 @@
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_close_window_32px_1;
             this.button9.Location = new System.Drawing.Point(760, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(44, 38);
             this.button9.TabIndex = 59;
@@ -102,12 +102,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(805, 311);
+            this.ClientSize = new System.Drawing.Size(805, 169);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLoadImage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLoadImage";

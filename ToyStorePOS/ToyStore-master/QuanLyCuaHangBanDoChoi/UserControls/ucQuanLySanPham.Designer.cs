@@ -67,8 +67,6 @@
             this.pnlThongTinSanPham = new System.Windows.Forms.Panel();
             this.txtSoLuong = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.btnThemNCC = new System.Windows.Forms.Button();
-            this.btnThemLoaiSP = new System.Windows.Forms.Button();
             this.btnLamMoiThongTin = new System.Windows.Forms.Button();
             this.btnNgungKinhDoanh = new System.Windows.Forms.Button();
             this.btnCapNhatSP = new System.Windows.Forms.Button();
@@ -164,6 +162,7 @@
             this.pnlNCC.Size = new System.Drawing.Size(221, 112);
             this.pnlNCC.TabIndex = 55;
             this.pnlNCC.Click += new System.EventHandler(this.pnlNCC_Click);
+            this.pnlNCC.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlNCC_Paint);
             // 
             // pictureBox3
             // 
@@ -547,6 +546,7 @@
             this.dgvSanPham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvSanPham.Size = new System.Drawing.Size(895, 523);
             this.dgvSanPham.TabIndex = 0;
+            this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick);
             this.dgvSanPham.Click += new System.EventHandler(this.dgvSanPham_Click);
             // 
             // panel10
@@ -596,8 +596,6 @@
             this.pnlThongTinSanPham.BackColor = System.Drawing.Color.White;
             this.pnlThongTinSanPham.Controls.Add(this.txtSoLuong);
             this.pnlThongTinSanPham.Controls.Add(this.label18);
-            this.pnlThongTinSanPham.Controls.Add(this.btnThemNCC);
-            this.pnlThongTinSanPham.Controls.Add(this.btnThemLoaiSP);
             this.pnlThongTinSanPham.Controls.Add(this.btnLamMoiThongTin);
             this.pnlThongTinSanPham.Controls.Add(this.btnNgungKinhDoanh);
             this.pnlThongTinSanPham.Controls.Add(this.btnCapNhatSP);
@@ -657,42 +655,6 @@
             this.label18.TabIndex = 57;
             this.label18.Text = "Số lượng";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnThemNCC
-            // 
-            this.btnThemNCC.BackColor = System.Drawing.Color.White;
-            this.btnThemNCC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemNCC.FlatAppearance.BorderSize = 0;
-            this.btnThemNCC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemNCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemNCC.ForeColor = System.Drawing.Color.White;
-            this.btnThemNCC.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_add_32px;
-            this.btnThemNCC.Location = new System.Drawing.Point(371, 322);
-            this.btnThemNCC.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemNCC.Name = "btnThemNCC";
-            this.btnThemNCC.Size = new System.Drawing.Size(47, 38);
-            this.btnThemNCC.TabIndex = 55;
-            this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemNCC.UseVisualStyleBackColor = false;
-            this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
-            // 
-            // btnThemLoaiSP
-            // 
-            this.btnThemLoaiSP.BackColor = System.Drawing.Color.White;
-            this.btnThemLoaiSP.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnThemLoaiSP.FlatAppearance.BorderSize = 0;
-            this.btnThemLoaiSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemLoaiSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemLoaiSP.ForeColor = System.Drawing.Color.White;
-            this.btnThemLoaiSP.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_add_32px;
-            this.btnThemLoaiSP.Location = new System.Drawing.Point(371, 277);
-            this.btnThemLoaiSP.Margin = new System.Windows.Forms.Padding(4);
-            this.btnThemLoaiSP.Name = "btnThemLoaiSP";
-            this.btnThemLoaiSP.Size = new System.Drawing.Size(47, 38);
-            this.btnThemLoaiSP.TabIndex = 55;
-            this.btnThemLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemLoaiSP.UseVisualStyleBackColor = false;
-            this.btnThemLoaiSP.Click += new System.EventHandler(this.btnThemLoaiSP_Click);
             // 
             // btnLamMoiThongTin
             // 
@@ -1190,12 +1152,10 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.DataGridView dgvSanPham;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Button btnThemLoaiSP;
         private System.Windows.Forms.PictureBox picHinhAnh;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cboLocLoaiSP;
-        private System.Windows.Forms.Button btnThemNCC;
         private System.Windows.Forms.ComboBox cboNCC;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Panel pnlNCC;

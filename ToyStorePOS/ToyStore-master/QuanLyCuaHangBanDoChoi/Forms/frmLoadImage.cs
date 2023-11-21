@@ -24,43 +24,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             this.Close();
         }
-        public static bool CheckForInternetConnection()
-        {
-            try
-            {
-                using (var client = new WebClient())
-                using (client.OpenRead("http://google.com/generate_204"))
-                    return true;
-            }
-            catch
-            {
-                return false;
-            }
-        }
-        private void btnLoad_Click(object sender, EventArgs e)
-        {
-            Cursor = Cursors.AppStarting;
-           
-            if (CheckForInternetConnection())
-            {
-                try
-                {
-                   
-                    img = pic.Image;
-                    Cursor = Cursors.Default;
-                    this.DialogResult = DialogResult.OK;
-                    this.Close();
-                }
-                catch (Exception)
-                {
-                    
-                    Cursor = Cursors.Default;
-                    return;
-                }
-            }
-           
-            Cursor = Cursors.Default;
-        }
+       
 
 
 

@@ -25,10 +25,15 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         private void ucSanPham_Load(object sender, EventArgs e)
         {
             LoadCboLoaiSP();
+
             LoadCboDVT();
+
             LoadCboNCC();
+
             LoadCboLocLoaiSP();
+
             LoadCboLocNCC();
+
             LoadDataGridViewTheoBoLoc();
         }
 
@@ -93,33 +98,8 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 return;
             }
         }
-        public Image byteArrayToImage(byte[] byteArrayIn)
-        {
-            Image returnImage = null;
-            using (MemoryStream ms = new MemoryStream(byteArrayIn))
-            {
-                returnImage = Image.FromStream(ms);
-            }
-            return returnImage;
-        }
-
-        private void btnThemLoaiSP_Click(object sender, EventArgs e)
-        {
-            ((frmChinh)this.Parent.Parent).Opacity = 0.8;
-            frmThemLoaiSP frm = new frmThemLoaiSP();
-            frm.ShowDialog();
-            if (frm.DialogResult == DialogResult.OK)
-            {
-                ((frmChinh)this.Parent.Parent).Opacity = 1;
-                LoadCboLoaiSP();
-                cboLoai.SelectedIndex = cboLoai.Items.Count - 1;
-                LoadCboLocLoaiSP();
-            }
-            else
-            {
-                ((frmChinh)this.Parent.Parent).Opacity = 1;
-            }
-        }
+ 
+       
 
         private void btnLamMoiThongTin_Click(object sender, EventArgs e)
         {
@@ -552,24 +532,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
         }
 
-        private void btnThemNCC_Click(object sender, EventArgs e)
-        {
-            ((frmChinh)this.Parent.Parent).Opacity = 0.8;
-            frmThemNCC frm = new frmThemNCC();
-            frm.ShowDialog();
-            if (frm.DialogResult == DialogResult.OK)
-            {
-                ((frmChinh)this.Parent.Parent).Opacity = 1;
-                LoadCboNCC();
-                cboNCC.SelectedIndex = cboNCC.Items.Count - 1;
-                LoadCboLocNCC();
-            }
-            else
-            {
-                ((frmChinh)this.Parent.Parent).Opacity = 1;
-            }
-        }
-
+     
         private void LoadCboLocNCC()
         {
             DataTable dt = NCCBL.GetInstance.GetDanhSachNCC();
@@ -730,6 +693,16 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         }
 
         private void cboLocLoaiSP_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlNCC_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
