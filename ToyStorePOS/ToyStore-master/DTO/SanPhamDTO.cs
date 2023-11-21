@@ -12,7 +12,7 @@ namespace DTO
         public string tensp { get; set; }
         public string maloaisp { get; set; }
         public string dvt { get; set; }
-        public int mansx { get; set; }
+
         public int mancc { get; set; }
         public DateTime ngaysx { get; set; }
         public DateTime ngayhethan { get; set; }

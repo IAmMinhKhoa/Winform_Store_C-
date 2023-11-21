@@ -23,7 +23,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         {
             LoadCboLocLoaiSP();
             LoadCboLocNCC();
-            LoadDanhSachSanPhamTheoBoLoc(1);
+            LoadDanhSachSanPhamTheoBoLoc();
         }
 
         private void LoadCboLocNCC()
@@ -52,47 +52,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             cboLocLoaiSP.SelectedIndex = cboLocLoaiSP.Items.Count - 1;
         }
         int sumpage = 0;
-        private void LoadDanhSachSanPhamTheoBoLoc(int numpage)
+        private void LoadDanhSachSanPhamTheoBoLoc()
         {
             flowLayoutPanelSanPham.Controls.Clear();
             DataTable dt = SanPhamBL.GetInstance.GetDanhSachSanPhamTheoBoLoc(txtTenSP.Text.Trim(), cboLocLoaiSP.SelectedValue.ToString().Trim(), cboLocNCC.SelectedValue.ToString().Trim());
 
-            int soDongTrenTrang = 8;
-            int soTrang = dt.Rows.Count / soDongTrenTrang;
-            if (dt.Rows.Count % soDongTrenTrang != 0)
-            {
-                soTrang += 1;
-            }
-            if (soTrang == 0)
-            {
-                sumpage = 0;
-                lblPageNumber.Text = "0/" + sumpage;
-            }
-            else
-            {
-                sumpage = soTrang;
-                lblPageNumber.Text = "1/" + sumpage;
-            }
-
-            int k = 0;
-            int j = 0;
-            //dt.AcceptChanges();
-            foreach (DataRow row in dt.Rows)
-            {
-                if (k >= (numpage * 8 - 8))
-                {
-                    j++;
-                    if (j > 8)
-                    {
-                        row.Delete();
-                        continue;
-                    }
-                    continue;
-                }
-                row.Delete();
-                k++;
-            }
-            dt.AcceptChanges();
 
             for (int i = 0; i < dt.Rows.Count; i++)
             {
@@ -132,34 +96,19 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 else
                     sp.lblSanCo.Text = "Sẵn có: " + sp.spDTO.soluong.ToString() + " " + sp.spDTO.dvt;
                 sp.lblGiaGoc.Font = new Font("UTM Avo", 10, FontStyle.Strikeout);
-               // sp.Click += Sp_Click;
-               // sp.lblGiaGoc.Click += LblGiaGoc_Click;
-               // sp.lblGiaKM.Click += LblGiaKM_Click;
-               // sp.lblKM.Click += LblKM_Click;
-               // sp.lblTenSP.Click += LblTenSP_Click;
-              //  sp.panel1.Click += Panel1_Click;
+             
+
+                //add event buy to image of prodcut card
                 sp.picSP.Click += PicSP_Click;
              
 
-                sp.KeyDown += Sp_KeyDown;
-                sp.lblGiaGoc.KeyDown += Sp_KeyDown;
-                sp.lblGiaKM.KeyDown += Sp_KeyDown;
-                sp.lblKM.KeyDown += Sp_KeyDown;
-                sp.lblTenSP.KeyDown += Sp_KeyDown;
-                sp.panel1.KeyDown += Sp_KeyDown;
-                sp.picSP.KeyDown += Sp_KeyDown;
+   
               
                 flowLayoutPanelSanPham.Controls.Add(sp);
             }
         }
 
-        private void Sp_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
+       
 
         private void PictureBox2_Click1(object sender, EventArgs e)
         {
@@ -168,57 +117,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         bool hd = false;
         public static int SOHD = 0;
         public static decimal ThanhTien = 0;
-        private void Panel1_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            Panel pn = (Panel)sender;
-            ucSanPham u = (ucSanPham)pn.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
-
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    txtSDT.Enabled = false;
-                    hd = true;
-                }
-            }
-        }
-
+        
         private void ThemHoaDon()
         {
             HoaDonDTO hddTO = new HoaDonDTO();
@@ -240,56 +139,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             txtSDT.Enabled = false;
         }
 
-        private void LblTenSP_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            Label p = (Label)sender;
-            ucSanPham u = (ucSanPham)p.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
-
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
+       
 
         private void ThemCTDH()
         {
@@ -360,222 +210,23 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
         }
 
-        private void LblKM_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            Label p = (Label)sender;
-            Panel pn = (Panel)p.Parent;
-            ucSanPham u = (ucSanPham)pn.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
+      
 
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
 
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
-
-        private void LblGiaKM_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            Label p = (Label)sender;
-            ucSanPham u = (ucSanPham)p.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
-
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
-
-        private void LblGiaGoc_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            Label p = (Label)sender;
-            ucSanPham u = (ucSanPham)p.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
-
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            PictureBox p = (PictureBox)sender;
-            ucSanPham u = (ucSanPham)p.Parent;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
-
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
-
+        //EVENT KHI CLICK VÀO ẢNH CARD PRODUCT
         private void PicSP_Click(object sender, EventArgs e)
         {
             decimal tong = 0;
             bool check_Out_Stock = false;
             PictureBox p = (PictureBox)sender;
             ucSanPham u = (ucSanPham)p.Parent;
-            u.Select();
+           // u.Select();
             if (u.spDTO.soluong > 0)
             {
-                Console.WriteLine(u.spDTO.soluong);
+                Console.WriteLine(u.spDTO.soluong+"sl");
                 for (int i = 0; i < dgvCTHD.Rows.Count; i++)
                 {
+                   
                     DataGridViewRow r = dgvCTHD.Rows[i];
                     if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
                     {
@@ -594,16 +245,8 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
                             dgvCTHD.Rows[i].Cells[5].Value = tong;
                             LoadTongHoaDon();
-                            if (hd == true)
-                            {
-
-                            }
-                            else
-                            {
-                                ThemHoaDon();
-                                hd = true;
-                                txtSDT.Enabled = false;
-                            }
+                           
+                            
                             return;
                         }
 
@@ -612,98 +255,31 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 }
                 if(!check_Out_Stock)
                 {
+                    Console.WriteLine("chay duoi nay");
                     tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
                     dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
                     dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
                     LoadTongHoaDon();
-                    if (hd == true)
-                    {
-
-                    }
-                    else
+                    Console.WriteLine(hd+"duoi");
+                    if (hd != true)
                     {
                         ThemHoaDon();
                         hd = true;
                         txtSDT.Enabled = false;
                     }
+                   
                 }
                
             }
         }
 
-        private void Sp_Click(object sender, EventArgs e)
-        {
-            decimal tong = 0;
-            ucSanPham u = (ucSanPham)sender;
-            u.Select();
-            if (u.spDTO.soluong > 0)
-            {
-                for (int i = 0; i < dgvCTHD.Rows.Count; i++)
-                {
-                    DataGridViewRow r = dgvCTHD.Rows[i];
-                    if (int.Parse(r.Cells[0].Value.ToString()) == u.spDTO.masp)
-                    {
-                        dgvCTHD.Rows[i].Cells[4].Value = int.Parse(r.Cells[4].Value.ToString()) + 1;
-                        dgvCTHD.Rows[i].Selected = true;
-                        decimal giagoc = decimal.Parse(r.Cells[2].Value.ToString());
-                        int km = int.Parse(r.Cells[3].Value.ToString());
-                        decimal giakm = giagoc - ((giagoc * km) / 100);
-                        tong = giakm * decimal.Parse(r.Cells[4].Value.ToString());
-                        dgvCTHD.Rows[i].Cells[5].Value = tong;
-                        LoadTongHoaDon();
-                        if (hd == true)
-                        {
+       
 
-                        }
-                        else
-                        {
-                            ThemHoaDon();
-                            hd = true;
-                            txtSDT.Enabled = false;
-                        }
-                        return;
-                    }
-                }
-                tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
-                dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
-                LoadTongHoaDon();
-                if (hd == true)
-                {
-
-                }
-                else
-                {
-                    ThemHoaDon();
-                    hd = true;
-                    txtSDT.Enabled = false;
-                }
-            }
-        }
-
-        private string Convert(decimal gia)
-        {
-            string giaban = gia.ToString();
-            string result = "";
-            int d = 0;
-            for (int i = giaban.Length - 1; i >= 0; i--)
-            {
-                d++;
-                result += giaban[i];
-                if (d == 3 && i != 0)
-                {
-                    result += ',';
-                    d = 0;
-                }
-            }
-            char[] charArray = result.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
-        }
+       
 
         private void btnApDung_Click(object sender, EventArgs e)
         {
-            LoadDanhSachSanPhamTheoBoLoc(1);
+            LoadDanhSachSanPhamTheoBoLoc();
         }
 
         private void btnLamMoi_Click(object sender, EventArgs e)
@@ -742,6 +318,8 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         }
 
+
+        //2 button - + trong CTHD mỗi row
         private void dgvCTHD_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 6)
@@ -852,7 +430,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 KhachHangBL.GetInstance.CapNhatDoanhSoKhachHang(makh, ThanhTien);
             ThemCTDH();
             InHoaDon();
-            LoadDanhSachSanPhamTheoBoLoc(1);
+            LoadDanhSachSanPhamTheoBoLoc();
             hd = false;
             txtSDT.Enabled = true;
             this.Cursor = Cursors.Default;
@@ -864,14 +442,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             frm.Show();
             frm.TopMost = true;
         }
-        private void ThanhToanF9()
-        {
-            btnThanhToan.PerformClick();
-        }
-        private void HuyF12()
-        {
-            btnHuy.PerformClick();
-        }
+       
         private void btnHuy_Click(object sender, EventArgs e)
         {
             HoaDonBL.GetInstance.XoaHD(SOHD);
@@ -923,10 +494,6 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             MessageBox.Show("SỐ TIỀN HIỆN TẠI VƯỢT RA KHỎI BỘ NHỚ RỒI, GIÀU DỮ VẬY TRỜI ƠI");
                             return;
                         }
-
-
-
-
                     }
                     else
                     {
@@ -940,29 +507,17 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     MessageBox.Show("SAI ĐỊNH DẠNG RỒI BRO");
                     txtTienKHTra.Clear();
                 }
-
-                
-
-
-
-                //txtTienKHTra.Text = String.Format(culture, "{0:N0}", value);
-                //txtTienKHTra.Select(txtTienKHTra.Text.Length, 0);
-
-               
             }
         }
 
         private void txtTienThua_TextChanged(object sender, EventArgs e)
         {
-            //System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo("en-US");
-            //decimal value = decimal.Parse(txtTienThua.Text, System.Globalization.NumberStyles.AllowThousands);
-            //txtTienThua.Text = String.Format(culture, "{0:N0}", value);
-            //txtTienThua.Select(txtTienThua.Text.Length, 0);
+            
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            Cursor = Cursors.AppStarting;
+           /* Cursor = Cursors.AppStarting;
             string pre = "";
             string next = "";
             string str = lblPageNumber.Text;
@@ -1000,14 +555,14 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     n += num[i];
                 }
             }
-            LoadDanhSachSanPhamTheoBoLoc(int.Parse(n)+1);
+           // LoadDanhSachSanPhamTheoBoLoc(int.Parse(n)+1);
             lblPageNumber.Text= int.Parse(n) + 1+"/"+ sumpage;
-            Cursor = Cursors.Default;
+            Cursor = Cursors.Default;*/
         }
 
         private void btnPre_Click(object sender, EventArgs e)
         {
-            Cursor = Cursors.AppStarting;
+           /* Cursor = Cursors.AppStarting;
             string pre = "";
             string str = lblPageNumber.Text;
             for (int i = 0; i < str.Length; i++)
@@ -1039,96 +594,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
             LoadDanhSachSanPhamTheoBoLoc(int.Parse(n) - 1);
             lblPageNumber.Text = int.Parse(n) - 1 + "/" + sumpage;
-            Cursor = Cursors.Default;
+            Cursor = Cursors.Default;*/
         }
 
-        private void txtTienKHTra_KeyDown(object sender, KeyEventArgs e)
-        {
-            if(e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
 
-        private void btnThanhToan_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
 
-        private void ucBanSanPham_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void dgvCTHD_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void btnPre_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void btnNext_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void txtTenSP_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void btnApDung_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void btnLamMoi_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void cboLocLoaiSP_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
-
-        private void cboLocNCC_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F9)
-                ThanhToanF9();
-            if (e.KeyCode == Keys.F12)
-                HuyF12();
-        }
 
         private void txtTenKH_TextChanged(object sender, EventArgs e)
         {
@@ -1146,6 +616,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         }
 
         private void flowLayoutPanelSanPham_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
