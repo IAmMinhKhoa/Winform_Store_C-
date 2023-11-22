@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChinh));
             this.panelLeft = new System.Windows.Forms.Panel();
+            this.btnPhieuNhap = new System.Windows.Forms.Button();
+            this.btnHoaDon = new System.Windows.Forms.Button();
             this.btnNhapSanPham = new System.Windows.Forms.Button();
             this.btnThietLap = new System.Windows.Forms.Button();
             this.btnKhachHang = new System.Windows.Forms.Button();
@@ -55,8 +57,6 @@
             this.timerTime = new System.Windows.Forms.Timer(this.components);
             this.imageListIcon = new System.Windows.Forms.ImageList(this.components);
             this.panelControls = new System.Windows.Forms.Panel();
-            this.btnHoaDon = new System.Windows.Forms.Button();
-            this.btnPhieuNhap = new System.Windows.Forms.Button();
             this.panelLeft.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picNhanVien)).BeginInit();
@@ -66,7 +66,7 @@
             // 
             // panelLeft
             // 
-            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.panelLeft.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelLeft.Controls.Add(this.btnPhieuNhap);
             this.panelLeft.Controls.Add(this.btnHoaDon);
@@ -81,15 +81,57 @@
             this.panelLeft.Controls.Add(this.panel2);
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
-            this.panelLeft.Margin = new System.Windows.Forms.Padding(4);
+            this.panelLeft.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(286, 886);
+            this.panelLeft.Size = new System.Drawing.Size(322, 1108);
             this.panelLeft.TabIndex = 0;
+            // 
+            // btnPhieuNhap
+            // 
+            this.btnPhieuNhap.AccessibleName = "banhang";
+            this.btnPhieuNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
+            this.btnPhieuNhap.FlatAppearance.BorderSize = 0;
+            this.btnPhieuNhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
+            this.btnPhieuNhap.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
+            this.btnPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPhieuNhap.Location = new System.Drawing.Point(14, 605);
+            this.btnPhieuNhap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnPhieuNhap.Name = "btnPhieuNhap";
+            this.btnPhieuNhap.Size = new System.Drawing.Size(309, 92);
+            this.btnPhieuNhap.TabIndex = 13;
+            this.btnPhieuNhap.Text = "    Phiếu Nhập";
+            this.btnPhieuNhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPhieuNhap.UseVisualStyleBackColor = false;
+            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
+            // 
+            // btnHoaDon
+            // 
+            this.btnHoaDon.AccessibleName = "banhang";
+            this.btnHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
+            this.btnHoaDon.FlatAppearance.BorderSize = 0;
+            this.btnHoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
+            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnHoaDon.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
+            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHoaDon.Location = new System.Drawing.Point(14, 507);
+            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(309, 92);
+            this.btnHoaDon.TabIndex = 12;
+            this.btnHoaDon.Text = "      Hóa Đơn";
+            this.btnHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // btnNhapSanPham
             // 
             this.btnNhapSanPham.AccessibleName = "sanpham";
-            this.btnNhapSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnNhapSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnNhapSanPham.FlatAppearance.BorderSize = 0;
             this.btnNhapSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnNhapSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -97,10 +139,10 @@
             this.btnNhapSanPham.ForeColor = System.Drawing.Color.White;
             this.btnNhapSanPham.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_warehouse_40px;
             this.btnNhapSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhapSanPham.Location = new System.Drawing.Point(10, 562);
-            this.btnNhapSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNhapSanPham.Location = new System.Drawing.Point(11, 702);
+            this.btnNhapSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNhapSanPham.Name = "btnNhapSanPham";
-            this.btnNhapSanPham.Size = new System.Drawing.Size(275, 74);
+            this.btnNhapSanPham.Size = new System.Drawing.Size(309, 92);
             this.btnNhapSanPham.TabIndex = 11;
             this.btnNhapSanPham.Text = "    Nhập Sản Phẩm";
             this.btnNhapSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -110,7 +152,7 @@
             // btnThietLap
             // 
             this.btnThietLap.AccessibleName = "thietlap";
-            this.btnThietLap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnThietLap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnThietLap.FlatAppearance.BorderSize = 0;
             this.btnThietLap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnThietLap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -118,10 +160,10 @@
             this.btnThietLap.ForeColor = System.Drawing.Color.White;
             this.btnThietLap.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_settings_40px;
             this.btnThietLap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThietLap.Location = new System.Drawing.Point(10, 795);
-            this.btnThietLap.Margin = new System.Windows.Forms.Padding(4);
+            this.btnThietLap.Location = new System.Drawing.Point(11, 994);
+            this.btnThietLap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnThietLap.Name = "btnThietLap";
-            this.btnThietLap.Size = new System.Drawing.Size(275, 74);
+            this.btnThietLap.Size = new System.Drawing.Size(309, 92);
             this.btnThietLap.TabIndex = 10;
             this.btnThietLap.Text = "    Thiết Lập";
             this.btnThietLap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -131,7 +173,7 @@
             // btnKhachHang
             // 
             this.btnKhachHang.AccessibleName = "khachhang";
-            this.btnKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnKhachHang.FlatAppearance.BorderSize = 0;
             this.btnKhachHang.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -139,10 +181,10 @@
             this.btnKhachHang.ForeColor = System.Drawing.Color.White;
             this.btnKhachHang.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_customer_40px;
             this.btnKhachHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhachHang.Location = new System.Drawing.Point(10, 717);
-            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKhachHang.Location = new System.Drawing.Point(11, 896);
+            this.btnKhachHang.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnKhachHang.Name = "btnKhachHang";
-            this.btnKhachHang.Size = new System.Drawing.Size(275, 74);
+            this.btnKhachHang.Size = new System.Drawing.Size(309, 92);
             this.btnKhachHang.TabIndex = 8;
             this.btnKhachHang.Text = "    Khách Hàng";
             this.btnKhachHang.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -152,7 +194,7 @@
             // btnNhanVien
             // 
             this.btnNhanVien.AccessibleName = "nhanvien";
-            this.btnNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnNhanVien.FlatAppearance.BorderSize = 0;
             this.btnNhanVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -160,10 +202,10 @@
             this.btnNhanVien.ForeColor = System.Drawing.Color.White;
             this.btnNhanVien.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_leadership_40px;
             this.btnNhanVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNhanVien.Location = new System.Drawing.Point(10, 639);
-            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.btnNhanVien.Location = new System.Drawing.Point(11, 799);
+            this.btnNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNhanVien.Name = "btnNhanVien";
-            this.btnNhanVien.Size = new System.Drawing.Size(275, 74);
+            this.btnNhanVien.Size = new System.Drawing.Size(309, 92);
             this.btnNhanVien.TabIndex = 7;
             this.btnNhanVien.Text = "    Nhân Viên";
             this.btnNhanVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -173,7 +215,7 @@
             // btnSanPham
             // 
             this.btnSanPham.AccessibleName = "sanpham";
-            this.btnSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnSanPham.FlatAppearance.BorderSize = 0;
             this.btnSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -181,10 +223,10 @@
             this.btnSanPham.ForeColor = System.Drawing.Color.White;
             this.btnSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPham.Image")));
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSanPham.Location = new System.Drawing.Point(12, 327);
-            this.btnSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSanPham.Location = new System.Drawing.Point(14, 410);
+            this.btnSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSanPham.Name = "btnSanPham";
-            this.btnSanPham.Size = new System.Drawing.Size(275, 74);
+            this.btnSanPham.Size = new System.Drawing.Size(309, 92);
             this.btnSanPham.TabIndex = 6;
             this.btnSanPham.Text = "    Sản Phẩm";
             this.btnSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -194,7 +236,7 @@
             // btnBanSanPham
             // 
             this.btnBanSanPham.AccessibleName = "banhang";
-            this.btnBanSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnBanSanPham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnBanSanPham.FlatAppearance.BorderSize = 0;
             this.btnBanSanPham.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnBanSanPham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -202,10 +244,10 @@
             this.btnBanSanPham.ForeColor = System.Drawing.Color.White;
             this.btnBanSanPham.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
             this.btnBanSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanSanPham.Location = new System.Drawing.Point(12, 250);
-            this.btnBanSanPham.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBanSanPham.Location = new System.Drawing.Point(14, 312);
+            this.btnBanSanPham.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnBanSanPham.Name = "btnBanSanPham";
-            this.btnBanSanPham.Size = new System.Drawing.Size(275, 74);
+            this.btnBanSanPham.Size = new System.Drawing.Size(309, 92);
             this.btnBanSanPham.TabIndex = 5;
             this.btnBanSanPham.Text = "    Bán Sản Phẩm";
             this.btnBanSanPham.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -215,16 +257,16 @@
             // panelSide
             // 
             this.panelSide.BackColor = System.Drawing.Color.White;
-            this.panelSide.Location = new System.Drawing.Point(-1, 174);
-            this.panelSide.Margin = new System.Windows.Forms.Padding(4);
+            this.panelSide.Location = new System.Drawing.Point(-1, 218);
+            this.panelSide.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelSide.Name = "panelSide";
-            this.panelSide.Size = new System.Drawing.Size(13, 74);
+            this.panelSide.Size = new System.Drawing.Size(15, 92);
             this.panelSide.TabIndex = 4;
             // 
             // btnTrangChu
             // 
             this.btnTrangChu.AccessibleName = "trangchu";
-            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            this.btnTrangChu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.btnTrangChu.FlatAppearance.BorderSize = 0;
             this.btnTrangChu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
             this.btnTrangChu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -232,10 +274,10 @@
             this.btnTrangChu.ForeColor = System.Drawing.Color.White;
             this.btnTrangChu.Image = ((System.Drawing.Image)(resources.GetObject("btnTrangChu.Image")));
             this.btnTrangChu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTrangChu.Location = new System.Drawing.Point(12, 172);
-            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnTrangChu.Location = new System.Drawing.Point(14, 215);
+            this.btnTrangChu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnTrangChu.Name = "btnTrangChu";
-            this.btnTrangChu.Size = new System.Drawing.Size(275, 74);
+            this.btnTrangChu.Size = new System.Drawing.Size(309, 92);
             this.btnTrangChu.TabIndex = 3;
             this.btnTrangChu.Text = "    Trang Chủ";
             this.btnTrangChu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -249,18 +291,18 @@
             this.panel2.Controls.Add(this.picNhanVien);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(284, 172);
+            this.panel2.Size = new System.Drawing.Size(320, 214);
             this.panel2.TabIndex = 1;
             // 
             // picNhanVien
             // 
-            this.picNhanVien.Image = ((System.Drawing.Image)(resources.GetObject("picNhanVien.Image")));
-            this.picNhanVien.Location = new System.Drawing.Point(89, 37);
-            this.picNhanVien.Margin = new System.Windows.Forms.Padding(4);
+            this.picNhanVien.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.LogoMain;
+            this.picNhanVien.Location = new System.Drawing.Point(100, 46);
+            this.picNhanVien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.picNhanVien.Name = "picNhanVien";
-            this.picNhanVien.Size = new System.Drawing.Size(103, 96);
+            this.picNhanVien.Size = new System.Drawing.Size(116, 120);
             this.picNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picNhanVien.TabIndex = 4;
             this.picNhanVien.TabStop = false;
@@ -273,10 +315,10 @@
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button9);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(286, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.Location = new System.Drawing.Point(322, 0);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1314, 59);
+            this.panel4.Size = new System.Drawing.Size(1478, 73);
             this.panel4.TabIndex = 1;
             // 
             // button1
@@ -288,10 +330,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_minimize_window_32px_1;
-            this.button1.Location = new System.Drawing.Point(1192, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(1340, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 57);
+            this.button1.Size = new System.Drawing.Size(68, 71);
             this.button1.TabIndex = 3;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
@@ -300,14 +342,14 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(133)))), ((int)(((byte)(204)))));
-            this.label4.Location = new System.Drawing.Point(24, 18);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(24)))), ((int)(((byte)(35)))));
+            this.label4.Location = new System.Drawing.Point(27, 14);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 25);
+            this.label4.Size = new System.Drawing.Size(446, 46);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Cửa Hàng Đồ Chơi";
+            this.label4.Text = "GROUP8 FURNITURE";
             // 
             // button9
             // 
@@ -318,10 +360,10 @@
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_close_window_32px;
-            this.button9.Location = new System.Drawing.Point(1252, 0);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Location = new System.Drawing.Point(1408, 0);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(60, 57);
+            this.button9.Size = new System.Drawing.Size(68, 71);
             this.button9.TabIndex = 2;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = true;
@@ -329,7 +371,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(133)))), ((int)(((byte)(204)))));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(0)))));
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.lbQuyen);
             this.panel3.Controls.Add(this.label6);
@@ -337,10 +379,10 @@
             this.panel3.Controls.Add(this.lbTenNV);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(286, 59);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.panel3.Location = new System.Drawing.Point(322, 73);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1314, 113);
+            this.panel3.Size = new System.Drawing.Size(1478, 141);
             this.panel3.TabIndex = 2;
             // 
             // lbQuyen
@@ -348,10 +390,10 @@
             this.lbQuyen.AutoSize = true;
             this.lbQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbQuyen.ForeColor = System.Drawing.Color.White;
-            this.lbQuyen.Location = new System.Drawing.Point(161, 62);
+            this.lbQuyen.Location = new System.Drawing.Point(181, 78);
             this.lbQuyen.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbQuyen.Name = "lbQuyen";
-            this.lbQuyen.Size = new System.Drawing.Size(0, 25);
+            this.lbQuyen.Size = new System.Drawing.Size(0, 29);
             this.lbQuyen.TabIndex = 0;
             // 
             // label6
@@ -359,10 +401,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(57, 62);
+            this.label6.Location = new System.Drawing.Point(64, 78);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 25);
+            this.label6.Size = new System.Drawing.Size(95, 29);
             this.label6.TabIndex = 0;
             this.label6.Text = "Quyền:";
             // 
@@ -372,10 +414,10 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.Location = new System.Drawing.Point(1166, 42);
+            this.labelTime.Location = new System.Drawing.Point(1312, 52);
             this.labelTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(122, 25);
+            this.labelTime.Size = new System.Drawing.Size(139, 29);
             this.labelTime.TabIndex = 0;
             this.labelTime.Text = "HH:MM:SS";
             // 
@@ -383,11 +425,11 @@
             // 
             this.lbTenNV.AutoSize = true;
             this.lbTenNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenNV.ForeColor = System.Drawing.Color.White;
-            this.lbTenNV.Location = new System.Drawing.Point(160, 23);
+            this.lbTenNV.ForeColor = System.Drawing.Color.Black;
+            this.lbTenNV.Location = new System.Drawing.Point(180, 29);
             this.lbTenNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTenNV.Name = "lbTenNV";
-            this.lbTenNV.Size = new System.Drawing.Size(152, 25);
+            this.lbTenNV.Size = new System.Drawing.Size(176, 29);
             this.lbTenNV.TabIndex = 0;
             this.lbTenNV.Text = "Nguyễn Văn A";
             // 
@@ -396,10 +438,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(32, 23);
+            this.label2.Location = new System.Drawing.Point(36, 29);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(122, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Xin chào:";
             // 
@@ -431,67 +473,25 @@
             this.panelControls.BackColor = System.Drawing.Color.White;
             this.panelControls.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelControls.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelControls.Location = new System.Drawing.Point(286, 172);
-            this.panelControls.Margin = new System.Windows.Forms.Padding(4);
+            this.panelControls.Location = new System.Drawing.Point(322, 214);
+            this.panelControls.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panelControls.Name = "panelControls";
-            this.panelControls.Size = new System.Drawing.Size(1314, 714);
+            this.panelControls.Size = new System.Drawing.Size(1478, 894);
             this.panelControls.TabIndex = 3;
             this.panelControls.Paint += new System.Windows.Forms.PaintEventHandler(this.panelControls_Paint);
             // 
-            // btnHoaDon
-            // 
-            this.btnHoaDon.AccessibleName = "banhang";
-            this.btnHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
-            this.btnHoaDon.FlatAppearance.BorderSize = 0;
-            this.btnHoaDon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnHoaDon.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
-            this.btnHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHoaDon.Location = new System.Drawing.Point(12, 398);
-            this.btnHoaDon.Margin = new System.Windows.Forms.Padding(4);
-            this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(275, 74);
-            this.btnHoaDon.TabIndex = 12;
-            this.btnHoaDon.Text = "      Hóa Đơn";
-            this.btnHoaDon.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnHoaDon.UseVisualStyleBackColor = false;
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
-            // 
-            // btnPhieuNhap
-            // 
-            this.btnPhieuNhap.AccessibleName = "banhang";
-            this.btnPhieuNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
-            this.btnPhieuNhap.FlatAppearance.BorderSize = 0;
-            this.btnPhieuNhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(51)))));
-            this.btnPhieuNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhieuNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhieuNhap.ForeColor = System.Drawing.Color.White;
-            this.btnPhieuNhap.Image = global::QuanLyCuaHangBanDoChoi.Properties.Resources.icons8_bill_40px_1;
-            this.btnPhieuNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhieuNhap.Location = new System.Drawing.Point(12, 480);
-            this.btnPhieuNhap.Margin = new System.Windows.Forms.Padding(4);
-            this.btnPhieuNhap.Name = "btnPhieuNhap";
-            this.btnPhieuNhap.Size = new System.Drawing.Size(275, 74);
-            this.btnPhieuNhap.TabIndex = 13;
-            this.btnPhieuNhap.Text = "    Phiếu Nhập";
-            this.btnPhieuNhap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPhieuNhap.UseVisualStyleBackColor = false;
-            this.btnPhieuNhap.Click += new System.EventHandler(this.btnPhieuNhap_Click);
-            // 
             // frmChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.ClientSize = new System.Drawing.Size(1600, 886);
+            this.ClientSize = new System.Drawing.Size(1800, 1108);
             this.Controls.Add(this.panelControls);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmChinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmChinh";

@@ -20,7 +20,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             cboTopSanPham2.SelectedIndex = 0;
             btnRefresh.PerformClick();
         }
-        private string Convert(double gia)
+        private string Convert(double gia)  //đổi giá thành chuỗi xxx.xxx.xxx
         {
             string giaban = gia.ToString();
             string result = "";
@@ -36,12 +36,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 }
             }
             char[] charArray = result.ToCharArray();
-            Array.Reverse(charArray);
-            return new string(charArray);
+            Array.Reverse(charArray); //đảo ngược thứ tự
+            return new string(charArray);  //xây dựng một chuỗi mới bằng cách ghép các ký tự trong mảng lại với nhau theo thứ tự trong mảng.
         }
         private void LoadData()
         {
-            Cursor = Cursors.AppStarting;
+            Cursor = Cursors.AppStarting; // Kiểu con trỏ chuột AppStarting thường được sử dụng để chỉ ra rằng ứng dụng đang trong quá trình khởi động và người dùng cần chờ đợi.
             lbSanPhanDaBan.Text = TrangChuBL.GetInstance.GetTongSanPhamDaBan().ToString();
             lbTongDoanhThu.Text = Convert(TrangChuBL.GetInstance.GetTongDoanhThu()) + " ₫";
             lbTongKhachHang.Text = TrangChuBL.GetInstance.GetTongKhachHang().ToString();
@@ -62,7 +62,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             //lblDoanhThu.Text = "Biểu Đồ Doanh Thu " + cboDoanhThu.SelectedItem.ToString();
             chartDoanhThu.Series.Clear();
             chartDoanhThu.Series.Add("Doanh Thu");
-            chartDoanhThu.Series["Doanh Thu"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar;
+            chartDoanhThu.Series["Doanh Thu"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Bar; //Bar
             chartDoanhThu.Series["Doanh Thu"].Font = new Font("UTM Avo", 10, FontStyle.Bold);
             chartDoanhThu.Series["Doanh Thu"].BorderColor = Color.Orange;
             chartDoanhThu.Series["Doanh Thu"].BorderWidth = 2;
@@ -77,7 +77,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartDoanhThu.Series["Doanh Thu"].Points.Add(doanhthu);
                     chartDoanhThu.Series["Doanh Thu"].Points[0].AxisLabel = DateTime.Now.ToShortDateString();
                     chartDoanhThu.Series["Doanh Thu"].Points[0].LegendText = DateTime.Now.ToShortDateString();
-                    chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                    chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                     chartDoanhThu.Series["Doanh Thu"].Points[0].Label = Convert(doanhthu).ToString() + " ₫";
                     break;
                 case "Hôm qua":
@@ -87,13 +87,13 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                         chartDoanhThu.Series["Doanh Thu"].Points.Add(dtDTO.doanhthu);
                         chartDoanhThu.Series["Doanh Thu"].Points[0].AxisLabel = dtDTO.ngay.ToShortDateString();
                         chartDoanhThu.Series["Doanh Thu"].Points[0].LegendText = DateTime.Now.ToShortDateString();
-                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                         chartDoanhThu.Series["Doanh Thu"].Points[0].Label = Convert(dtDTO.doanhthu).ToString() + " ₫";
                     }
                     else
                     {
                         chartDoanhThu.Series["Doanh Thu"].Points.Add(0);
-                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                         chartDoanhThu.Series["Doanh Thu"].Points[0].Label = "0 ₫";
                     }
                     break;
@@ -108,7 +108,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             chartDoanhThu.Series["Doanh Thu"].Points.Add(dtDTO.doanhthu);
                             chartDoanhThu.Series["Doanh Thu"].Points[n].AxisLabel = dtDTO.ngay.ToShortDateString();
                             chartDoanhThu.Series["Doanh Thu"].Points[n].LegendText = dtDTO.ngay.ToShortDateString();
-                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.OrangeRed;
+                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.Black;
                             chartDoanhThu.Series["Doanh Thu"].Points[n].Label = Convert(dtDTO.doanhthu).ToString() + " ₫";
                             n++;
                         }
@@ -116,7 +116,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     else
                     {
                         chartDoanhThu.Series["Doanh Thu"].Points.Add(0);
-                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                         chartDoanhThu.Series["Doanh Thu"].Points[0].Label = "0 ₫";
                     }
                     break;
@@ -131,7 +131,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             chartDoanhThu.Series["Doanh Thu"].Points.Add(dtDTO.doanhthu);
                             chartDoanhThu.Series["Doanh Thu"].Points[n].AxisLabel = dtDTO.ngay.ToShortDateString();
                             chartDoanhThu.Series["Doanh Thu"].Points[n].LegendText = dtDTO.ngay.ToShortDateString();
-                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.OrangeRed;
+                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.Black;
                             chartDoanhThu.Series["Doanh Thu"].Points[n].Label = Convert(dtDTO.doanhthu).ToString() + " ₫";
                             n++;
                         }
@@ -139,7 +139,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     else
                     {
                         chartDoanhThu.Series["Doanh Thu"].Points.Add(0);
-                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                         chartDoanhThu.Series["Doanh Thu"].Points[0].Label = "0 ₫";
                     }
                     break;
@@ -154,7 +154,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                             chartDoanhThu.Series["Doanh Thu"].Points.Add(dtDTO.doanhthu);
                             chartDoanhThu.Series["Doanh Thu"].Points[n].AxisLabel = dtDTO.ngay.ToShortDateString();
                             chartDoanhThu.Series["Doanh Thu"].Points[n].LegendText = dtDTO.ngay.ToShortDateString();
-                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.OrangeRed;
+                            chartDoanhThu.Series["Doanh Thu"].Points[n].LabelForeColor = Color.Black;
                             chartDoanhThu.Series["Doanh Thu"].Points[n].Label = Convert(dtDTO.doanhthu).ToString() + " ₫";
                             n++;
                         }
@@ -162,7 +162,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     else
                     {
                         chartDoanhThu.Series["Doanh Thu"].Points.Add(0);
-                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.OrangeRed;
+                        chartDoanhThu.Series["Doanh Thu"].Points[0].LabelForeColor = Color.Black;
                         chartDoanhThu.Series["Doanh Thu"].Points[0].Label = "0 ₫";
                     }
                     break;
@@ -182,7 +182,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -203,7 +203,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -224,7 +224,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -245,7 +245,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -266,7 +266,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -287,7 +287,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -308,7 +308,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -350,7 +350,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 
@@ -371,7 +371,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
                     chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
-                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
+                    chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
 

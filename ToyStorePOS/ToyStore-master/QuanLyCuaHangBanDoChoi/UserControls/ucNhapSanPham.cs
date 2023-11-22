@@ -57,7 +57,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                         MessageBox.Show("Tạo phiếu nhập rồi đấy");
 
                         btnThem.Enabled = true;
-                        btnThem.BackColor = Color.FromArgb(17, 145, 249);
+                        btnThem.BackColor = Color.FromArgb(33, 166, 0);
 
                         lblDaTaoPhieuNhap.Visible = true;
                         btnTaoPhieu.Enabled = false;
@@ -136,7 +136,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             btnLuu.Enabled = true;
             btnLuu.BackColor = Color.FromArgb(17, 145, 249);
             btnHuy.Enabled = true;
-            btnHuy.BackColor = Color.OrangeRed;
+            btnHuy.BackColor = Color.FromArgb(250, 58, 58);
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
@@ -210,9 +210,9 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 DataGridViewRow dr = dgvPhieuNhap.SelectedRows[0];
                 maphieu = int.Parse(dr.Cells["Mã Phiếu"].Value.ToString().Trim());
-                btnDaNhap.BackColor = Color.FromArgb(17, 145, 249);
+                btnDaNhap.BackColor = Color.FromArgb(33, 166, 0);
                 btnDaNhap.Enabled = true;
-                btnXoa.BackColor = Color.FromArgb(17, 145, 249);
+                btnXoa.BackColor = Color.FromArgb(250, 58, 58);
                 btnXoa.Enabled = true;
             }
         }
@@ -282,6 +282,11 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     txtSoLuong.Clear();
                 }
             }
+        }
+
+        private void dgvPhieuNhap_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
