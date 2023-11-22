@@ -91,7 +91,7 @@
             legend1.Name = "Legend1";
             this.chartTopSP.Legends.Add(legend1);
             this.chartTopSP.Location = new System.Drawing.Point(661, 62);
-            this.chartTopSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartTopSP.Margin = new System.Windows.Forms.Padding(4);
             this.chartTopSP.Name = "chartTopSP";
             this.chartTopSP.Size = new System.Drawing.Size(649, 520);
             this.chartTopSP.TabIndex = 6;
@@ -106,7 +106,7 @@
             legend2.Name = "Legend1";
             this.chartDoanhThu.Legends.Add(legend2);
             this.chartDoanhThu.Location = new System.Drawing.Point(4, 62);
-            this.chartDoanhThu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.chartDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.chartDoanhThu.Name = "chartDoanhThu";
             this.chartDoanhThu.Size = new System.Drawing.Size(649, 520);
             this.chartDoanhThu.TabIndex = 7;
@@ -126,7 +126,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel10, 2, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 183);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
@@ -143,7 +143,7 @@
             this.panel9.Controls.Add(this.lblDoanhThu);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(4, 4);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(649, 50);
             this.panel9.TabIndex = 8;
@@ -162,7 +162,7 @@
             "Tháng này",
             "Tháng trước"});
             this.cboDoanhThu.Location = new System.Drawing.Point(499, 0);
-            this.cboDoanhThu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboDoanhThu.Margin = new System.Windows.Forms.Padding(4);
             this.cboDoanhThu.Name = "cboDoanhThu";
             this.cboDoanhThu.Size = new System.Drawing.Size(150, 33);
             this.cboDoanhThu.TabIndex = 4;
@@ -191,7 +191,7 @@
             this.panel10.Controls.Add(this.lblTopSP);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(661, 4);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(649, 50);
             this.panel10.TabIndex = 8;
@@ -209,7 +209,7 @@
             "Theo số lượng",
             "Theo doanh thu"});
             this.cboTopSanPham2.Location = new System.Drawing.Point(320, 0);
-            this.cboTopSanPham2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTopSanPham2.Margin = new System.Windows.Forms.Padding(4);
             this.cboTopSanPham2.Name = "cboTopSanPham2";
             this.cboTopSanPham2.Size = new System.Drawing.Size(176, 33);
             this.cboTopSanPham2.TabIndex = 4;
@@ -229,7 +229,7 @@
             "Tháng này",
             "Tháng trước"});
             this.cboTopSanPham1.Location = new System.Drawing.Point(496, 0);
-            this.cboTopSanPham1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboTopSanPham1.Margin = new System.Windows.Forms.Padding(4);
             this.cboTopSanPham1.Name = "cboTopSanPham1";
             this.cboTopSanPham1.Size = new System.Drawing.Size(153, 33);
             this.cboTopSanPham1.TabIndex = 3;
@@ -259,7 +259,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel3.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -273,7 +273,7 @@
             this.panel5.Controls.Add(this.btnRefresh);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(4, 4);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1306, 56);
             this.panel5.TabIndex = 0;
@@ -299,7 +299,7 @@
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.Location = new System.Drawing.Point(1250, 0);
-            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(56, 56);
             this.btnRefresh.TabIndex = 13;
@@ -321,7 +321,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel8, 3, 0);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 53);
-            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -333,7 +333,7 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(1318, 4);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1, 122);
             this.panel4.TabIndex = 14;
@@ -344,7 +344,7 @@
             this.panel6.Controls.Add(this.panel1);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(4, 4);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(430, 122);
             this.panel6.TabIndex = 16;
@@ -357,7 +357,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(430, 122);
             this.panel1.TabIndex = 10;
@@ -365,7 +365,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Location = new System.Drawing.Point(324, 32);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(76, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -402,7 +402,7 @@
             this.panel7.Controls.Add(this.panel2);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(442, 4);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(430, 122);
             this.panel7.TabIndex = 17;
@@ -415,7 +415,7 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(430, 122);
             this.panel2.TabIndex = 11;
@@ -423,7 +423,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Location = new System.Drawing.Point(329, 32);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(76, 73);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -460,7 +460,7 @@
             this.panel8.Controls.Add(this.panel3);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(880, 4);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(430, 122);
             this.panel8.TabIndex = 18;
@@ -473,7 +473,7 @@
             this.panel3.Controls.Add(this.label8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(430, 122);
             this.panel3.TabIndex = 12;
@@ -481,7 +481,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Location = new System.Drawing.Point(331, 32);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(76, 73);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -520,7 +520,7 @@
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucTrangChu";
             this.Size = new System.Drawing.Size(1314, 770);
             this.Load += new System.EventHandler(this.ucTrangChu_Load);
