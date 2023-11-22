@@ -299,13 +299,13 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             txtTenKH.Text = KhachHangBL.GetInstance.GetTenKhachHang(txtSDT.Text);
             if (txtTenKH.Text == "")
             {
-                picThanhCong.Visible = false;
+               
             }
             else
             {
                 tenkh = KhachHangBL.GetInstance.GetTenMaKH(txtSDT.Text);
                 makh = int.Parse(KhachHangBL.GetInstance.GetTenMaKH(txtSDT.Text));
-                picThanhCong.Visible = true;
+             
             }
         }
 
