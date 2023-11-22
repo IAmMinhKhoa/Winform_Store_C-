@@ -674,7 +674,7 @@
             this.btnThemNCC.TabIndex = 55;
             this.btnThemNCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNCC.UseVisualStyleBackColor = false;
-            this.btnThemNCC.Click += new System.EventHandler(this.btnThemNCC_Click);
+
             // 
             // btnThemLoaiSP
             // 
@@ -692,7 +692,7 @@
             this.btnThemLoaiSP.TabIndex = 55;
             this.btnThemLoaiSP.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemLoaiSP.UseVisualStyleBackColor = false;
-            this.btnThemLoaiSP.Click += new System.EventHandler(this.btnThemLoaiSP_Click);
+   
             // 
             // btnLamMoiThongTin
             // 

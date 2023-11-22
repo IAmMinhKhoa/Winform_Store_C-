@@ -131,7 +131,7 @@
             this.btnLamMoi.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLamMoi.UseVisualStyleBackColor = false;
             this.btnLamMoi.Click += new System.EventHandler(this.btnLamMoi_Click);
-            this.btnLamMoi.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnLamMoi_KeyDown);
+           
             // 
             // btnApDung
             // 
@@ -151,7 +151,7 @@
             this.btnApDung.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnApDung.UseVisualStyleBackColor = false;
             this.btnApDung.Click += new System.EventHandler(this.btnApDung_Click);
-            this.btnApDung.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnApDung_KeyDown);
+            
             // 
             // txtTenSP
             // 
@@ -164,7 +164,7 @@
             this.txtTenSP.Name = "txtTenSP";
             this.txtTenSP.Size = new System.Drawing.Size(275, 33);
             this.txtTenSP.TabIndex = 0;
-            this.txtTenSP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTenSP_KeyDown);
+           
             // 
             // label7
             // 
@@ -272,7 +272,7 @@
             this.btnNext.TabIndex = 5;
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
-            this.btnNext.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnNext_KeyDown);
+        
             // 
             // lblPageNumber
             // 
@@ -303,7 +303,7 @@
             this.btnPre.TabIndex = 5;
             this.btnPre.UseVisualStyleBackColor = false;
             this.btnPre.Click += new System.EventHandler(this.btnPre_Click);
-            this.btnPre.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnPre_KeyDown);
+          
             // 
             // flowLayoutPanelSanPham
             // 
@@ -415,7 +415,7 @@
             this.txtTienKHTra.Size = new System.Drawing.Size(282, 40);
             this.txtTienKHTra.TabIndex = 60;
             this.txtTienKHTra.TextChanged += new System.EventHandler(this.txtTienKHTra_TextChanged);
-            this.txtTienKHTra.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtTienKHTra_KeyDown);
+          
             // 
             // label6
             // 
@@ -467,7 +467,7 @@
             this.btnThanhToan.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThanhToan.UseVisualStyleBackColor = false;
             this.btnThanhToan.Click += new System.EventHandler(this.btnThanhToan_Click);
-            this.btnThanhToan.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnThanhToan_KeyDown);
+        
             // 
             // lblTongTien
             // 
@@ -553,7 +553,7 @@
             this.dgvCTHD.TabIndex = 1;
             this.dgvCTHD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTHD_CellClick);
             this.dgvCTHD.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCTHD_CellContentClick);
-            this.dgvCTHD.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvCTHD_KeyDown);
+         
             // 
             // MaSP
             // 
@@ -664,7 +664,7 @@
             this.cboLocLoaiSP.Name = "cboLocLoaiSP";
             this.cboLocLoaiSP.Size = new System.Drawing.Size(162, 41);
             this.cboLocLoaiSP.TabIndex = 1;
-            this.cboLocLoaiSP.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboLocLoaiSP_KeyDown);
+    
             // 
             // panel3
             // 
@@ -815,7 +815,7 @@
             this.cboLocNCC.Name = "cboLocNCC";
             this.cboLocNCC.Size = new System.Drawing.Size(162, 41);
             this.cboLocNCC.TabIndex = 56;
-            this.cboLocNCC.KeyDown += new System.Windows.Forms.KeyEventHandler(this.cboLocNCC_KeyDown);
+         
             // 
             // label25
             // 
@@ -912,7 +912,7 @@
             this.Name = "ucBanSanPham";
             this.Size = new System.Drawing.Size(1477, 962);
             this.Load += new System.EventHandler(this.ucBanHang_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ucBanSanPham_KeyDown);
+          
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);

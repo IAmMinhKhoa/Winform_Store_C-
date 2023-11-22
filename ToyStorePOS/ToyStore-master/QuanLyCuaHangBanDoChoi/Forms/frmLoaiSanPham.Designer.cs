@@ -239,7 +239,7 @@
             // 
             // timer
             // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
+            
             // 
             // button9
             // 
