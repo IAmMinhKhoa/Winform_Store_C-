@@ -111,7 +111,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (ctrl is TextBox)
                 {
-                    if (ctrl.BackColor == Color.OrangeRed)
+                    if (ctrl.BackColor == Color.Gray)
                     {
                         ctrl.BackColor = Color.White;
                     }
@@ -128,7 +128,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 {
                     if (ctrl.Text == "")
                     {
-                        ctrl.BackColor = Color.OrangeRed;
+                        ctrl.BackColor = Color.Gray;
                         r = 1;
                     }
                 }
@@ -281,6 +281,26 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         private void txtDoanhSo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtTen_TextChanged(object sender, EventArgs e)
+        {
+            ResetColorControls();
+        }
+
+        private void txtDiaChi_TextChanged(object sender, EventArgs e)
+        {
+            ResetColorControls();
+        }
+
+        private void txtSoDienThoai_TextChanged(object sender, EventArgs e)
+        {
+            ResetColorControls();
+        }
+
+        private void txtEmail_TextChanged(object sender, EventArgs e)
+        {
+            ResetColorControls();
         }
     }
 }

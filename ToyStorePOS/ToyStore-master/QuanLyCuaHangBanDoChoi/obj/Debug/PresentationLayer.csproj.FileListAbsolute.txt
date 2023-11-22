@@ -675,9 +675,6 @@ C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyC
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmLoadImage.resources
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmLoaiSanPham.resources
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmNCC.resources
-C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmPopupNotification.resources
-C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThemLoaiSP.resources
-C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThemNCC.resources
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.Forms.frmThongBao.resources
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.UserControls.ucBanSanPham.resources
 C:\Users\Admin\source\repos\Winform_Store_C-\ToyStorePOS\ToyStore-master\QuanLyCuaHangBanDoChoi\obj\Debug\QuanLyCuaHangBanDoChoi.UserControls.ucPhieuNhap.resources
