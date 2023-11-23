@@ -214,13 +214,14 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 btnDaNhap.Enabled = true;
                 btnXoa.BackColor = Color.FromArgb(250, 58, 58);
                 btnXoa.Enabled = true;
+ 
             }
-        }
+        }   
 
         private void btnDaNhap_Click(object sender, EventArgs e)
         {
             bool result = false;
-            if (btnDaNhap.BackColor == Color.FromArgb(17, 145, 249) && maphieu != 0)
+            if (btnDaNhap.BackColor == Color.FromArgb(33, 166, 0) && maphieu != 0)
             {
                 if (PhieuNhapBL.GetInstance.XacNhan(maphieu))
                 {
@@ -253,8 +254,10 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            if (btnXoa.BackColor == Color.FromArgb(17, 145, 249) && maphieu != 0)
+      
+            if (btnXoa.BackColor == Color.FromArgb(250, 58, 58) && maphieu != 0)
             {
+       
                 if (PhieuNhapBL.GetInstance.XoaPN(maphieu))
                 {
                     MessageBox.Show("Xóa phiếu nhập thành công");
