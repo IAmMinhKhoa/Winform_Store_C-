@@ -139,12 +139,12 @@ namespace DataAccessLayer
                 da.Fill(ds,"DataTable_HoaDon");               
                 ds.Tables[0].Columns.Add("DOCSOTIEN");
                 
-                for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+                /*for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {
                     string TongTien = ds.Tables[0].Rows[i]["TONGHOADON"].ToString();
                     string soTienChu = "";
                     ds.Tables[0].Rows[i]["DOCSOTIEN"] = ""+soTienChu+"";
-                }
+                }*/
                 
                 return ds;
             }
@@ -153,7 +153,7 @@ namespace DataAccessLayer
                 return null;
             }
         }
-        private static string Chu(string gNumber)
+        /*private static string Chu(string gNumber)
         {
             string result = "";
             switch (gNumber)
@@ -333,7 +333,7 @@ namespace DataAccessLayer
                 lso_chu = dau.Trim() + " " + lso_chu.Trim().Substring(0, 1).Trim().ToUpper() + lso_chu.Trim().Substring(1, lso_chu.Trim().Length - 1).Trim() + " đồng chẵn.";
 
             return lso_chu.ToString().Trim();
-        }
+        }*/
         #endregion
 
         #region Xóa Hóa Đơn

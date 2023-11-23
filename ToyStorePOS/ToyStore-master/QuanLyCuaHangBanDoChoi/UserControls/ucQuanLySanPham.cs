@@ -446,6 +446,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         private void LoadDataGridViewTheoBoLoc()
         {
             dgvSanPham.DataSource = SanPhamBL.GetInstance.GetDanhSachSanPhamTheoBoLoc(txtTenSP.Text.Trim(), cboLocLoaiSP.SelectedValue.ToString().Trim(), cboLocNCC.SelectedValue.ToString().Trim());
+           
             dgvSanPham.ClearSelection();
         }
 

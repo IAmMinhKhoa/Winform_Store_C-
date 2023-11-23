@@ -32,7 +32,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             this.reportViewer1.RefreshReport();
         }
 
-        private void btnIn_Click(object sender, EventArgs e)
+      /*  private void btnIn_Click(object sender, EventArgs e)
         {
             DataSet ds = HoaDonBL.GetInstance.InHoaDon(ucBanSanPham.SOHD_Report);
             ReportDataSource dataSource = new ReportDataSource("DataSet_Report", ds.Tables[0]);
@@ -41,7 +41,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             this.reportViewer1.LocalReport.DataSources.Add(dataSource);
             this.reportViewer1.RefreshReport();
 
-        }
+        }*/
 
         private void reportViewer1_Load(object sender, EventArgs e)
         {
