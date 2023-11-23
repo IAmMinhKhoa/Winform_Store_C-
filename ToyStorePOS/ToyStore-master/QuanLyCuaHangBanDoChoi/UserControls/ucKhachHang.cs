@@ -41,40 +41,58 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if (txtSoDienThoai.Text.Length <= 12 && txtSoDienThoai.Text.Length >= 10)
+                    if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                     {
-                        if (txtDiaChi.Text.Length <= 200)
+                        if (txtSoDienThoai.Text.Length == 10)
                         {
-                            KhachHangDTO khDTO = new KhachHangDTO();
-                            khDTO.tenkh = txtTen.Text;
-                            khDTO.diachi = txtDiaChi.Text;
-                            if (cboGioiTinh.Text == "Nam")
-                                khDTO.gioitinh = true;
-                            else
-                                khDTO.gioitinh = false;
-                            khDTO.ngaydangky = dateNgayDangKy.Value;
-                            khDTO.email = txtEmail.Text;
-                            khDTO.sdt = txtSoDienThoai.Text;
-
-
-                            if (KhachHangBL.GetInstance.ThemKhachHang(khDTO))
+                            if (txtDiaChi.Text.Length <= 200)
                             {
-                                LoadDgvKhachHang();
-                                LamMoi();
-                                MessageBox.Show("Thêm KH thành công");
+                                if (ValidateEmail(txtEmail.Text))
+                                {
+                                    KhachHangDTO khDTO = new KhachHangDTO();
+                                    khDTO.tenkh = txtTen.Text;
+                                    khDTO.diachi = txtDiaChi.Text;
+                                    if (cboGioiTinh.Text == "Nam")
+                                        khDTO.gioitinh = true;
+                                    else
+                                        khDTO.gioitinh = false;
+                                    khDTO.ngaydangky = dateNgayDangKy.Value;
+                                    khDTO.email = txtEmail.Text;
+                                    khDTO.sdt = txtSoDienThoai.Text;
+
+
+                                    if (KhachHangBL.GetInstance.ThemKhachHang(khDTO))
+                                    {
+                                        LoadDgvKhachHang();
+                                        LamMoi();
+                                        MessageBox.Show("Thêm KH thành công");
+                                    }
+                                }
+                                else
+                                {
+                                    frmThongBao frm = new frmThongBao();
+                                    frm.lblThongBao.Text = "Định dạng Email không hợp lệ!";
+                                    frm.ShowDialog();
+                                }
+                            }
+                            else
+                            {
+                                frmThongBao frm = new frmThongBao();
+                                frm.lblThongBao.Text = "Địa chỉ tối đa 200 ký tự!";
+                                frm.ShowDialog();
                             }
                         }
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Địa chỉ tối đa 200 ký tự!";
+                            frm.lblThongBao.Text = "Số điện thoại phải đủ 10!";
                             frm.ShowDialog();
                         }
                     }
                     else
                     {
                         frmThongBao frm = new frmThongBao();
-                        frm.lblThongBao.Text = "Số điện thoại phải từ 10 đến 12 số!";
+                        frm.lblThongBao.Text = "Số điện thoại phải là số!";
                         frm.ShowDialog();
                     }
                 }
@@ -191,40 +209,59 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if (txtSoDienThoai.Text.Length <= 12 && txtSoDienThoai.Text.Length >= 10)
+                    if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                     {
-                        if (txtDiaChi.Text.Length <= 200)
+                        if (txtSoDienThoai.Text.Length == 10)
                         {
-                            KhachHangDTO khDTO = new KhachHangDTO();
-                            khDTO.makh = makh;
-                            khDTO.tenkh = txtTen.Text;
-                            khDTO.diachi = txtDiaChi.Text;
-                            if (cboGioiTinh.Text == "Nam")
-                                khDTO.gioitinh = true;
-                            else
-                                khDTO.gioitinh = false;
-                            khDTO.ngaydangky = dateNgayDangKy.Value;
-                            khDTO.email = txtEmail.Text;
-                            khDTO.sdt = txtSoDienThoai.Text;
-
-                            if (KhachHangBL.GetInstance.SuaThongTinKhachHang(khDTO))
+                            if (txtDiaChi.Text.Length <= 200)
                             {
-                                LoadDgvKhachHang();
-                                LamMoi();
-                                MessageBox.Show("Cập nhật thành công");
+                                if(ValidateEmail(txtEmail.Text))
+                                {
+                                    KhachHangDTO khDTO = new KhachHangDTO();
+                                    khDTO.makh = makh;
+                                    khDTO.tenkh = txtTen.Text;
+                                    khDTO.diachi = txtDiaChi.Text;
+                                    if (cboGioiTinh.Text == "Nam")
+                                        khDTO.gioitinh = true;
+                                    else
+                                        khDTO.gioitinh = false;
+                                    khDTO.ngaydangky = dateNgayDangKy.Value;
+                                    khDTO.email = txtEmail.Text;
+                                    khDTO.sdt = txtSoDienThoai.Text;
+
+                                    if (KhachHangBL.GetInstance.SuaThongTinKhachHang(khDTO))
+                                    {
+                                        LoadDgvKhachHang();
+                                        LamMoi();
+                                        MessageBox.Show("Cập nhật thành công");
+                                    }
+                                }
+                                else
+                                {
+                                    frmThongBao frm = new frmThongBao();
+                                    frm.lblThongBao.Text = "Định dạng Email không hợp lệ!";
+                                    frm.ShowDialog();
+                                }
+                            }
+                            else
+                            {
+                                frmThongBao frm = new frmThongBao();
+                                frm.lblThongBao.Text = "Địa chỉ tối đa 200 ký tự!";
+                                frm.ShowDialog();
                             }
                         }
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Địa chỉ tối đa 200 ký tự!";
+                            frm.lblThongBao.Text = "Số điện thoại phải đủ 10 số!";
                             frm.ShowDialog();
                         }
+
                     }
                     else
                     {
                         frmThongBao frm = new frmThongBao();
-                        frm.lblThongBao.Text = "Số điện thoại phải từ 10 đến 12 số!";
+                        frm.lblThongBao.Text = "Số điện thoại phải là số!";
                         frm.ShowDialog();
                     }
                 }
@@ -240,6 +277,23 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 frmThongBao frm = new frmThongBao();
                 frm.lblThongBao.Text = "Bạn chưa nhập đủ thông tin khách hàng";
                 frm.ShowDialog();
+            }
+        }
+
+        // Hàm validation cho email
+        private bool ValidateEmail(string email)
+        {
+            // Biểu thức chính quy cho định dạng email
+            string emailPattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+
+            // Kiểm tra định dạng email
+            if (Regex.IsMatch(email, emailPattern))
+            {
+                return true; // Email hợp lệ
+            }
+            else
+            {
+                return false; // Email không hợp lệ
             }
         }
         int makh = 0;  //Kiểm soát khách hàng đang đc chọn để cập nhật,xoá 

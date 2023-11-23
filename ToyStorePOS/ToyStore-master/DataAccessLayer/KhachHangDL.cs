@@ -61,7 +61,7 @@ namespace DataAccessLayer
         }
         #endregion
 
-        #region Lấy Tên Khách Hàng
+        #region Lấy Mã Khách Hàng
         public string GetTenMaKH(string SDT)
         {
             try
