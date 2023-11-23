@@ -136,8 +136,8 @@ namespace DataAccessLayer
                 DataSet ds = new DataSet();
                 SqlDataAdapter da = new SqlDataAdapter(sql, DataProvider.Openconnect());
                 
-                da.Fill(ds,"DataTable_HoaDon");               
-                ds.Tables[0].Columns.Add("DOCSOTIEN");
+                da.Fill(ds,"DataTable_HoaDonll");               
+                //ds.Tables[0].Columns.Add("DOCSOTIEN");
                 
                 /*for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
                 {

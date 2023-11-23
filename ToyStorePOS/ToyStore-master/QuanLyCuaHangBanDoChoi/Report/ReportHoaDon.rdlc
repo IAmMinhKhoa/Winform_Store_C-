@@ -790,7 +790,7 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>TIENKHACHHANGTRA</rd:DefaultName>
-        <Top>2.01611in</Top>
+        <Top>2.00223in</Top>
         <Left>5.00348in</Left>
         <Height>0.25in</Height>
         <Width>1in</Width>
@@ -859,7 +859,7 @@
         </Paragraphs>
         <rd:DefaultName>TENKH</rd:DefaultName>
         <Top>0.72097in</Top>
-        <Left>1.42583in</Left>
+        <Left>1.43972in</Left>
         <Height>0.25in</Height>
         <Width>1.63542in</Width>
         <ZIndex>13</ZIndex>
@@ -905,38 +905,6 @@
           <PaddingBottom>2pt</PaddingBottom>
         </Style>
       </Textbox>
-      <Textbox Name="DOCSOTIEN">
-        <CanGrow>true</CanGrow>
-        <KeepTogether>true</KeepTogether>
-        <Paragraphs>
-          <Paragraph>
-            <TextRuns>
-              <TextRun>
-                <Value>=First(Fields!DOCSOTIEN.Value, "DataSet_Report")</Value>
-                <Style />
-              </TextRun>
-            </TextRuns>
-            <Style>
-              <TextAlign>Right</TextAlign>
-            </Style>
-          </Paragraph>
-        </Paragraphs>
-        <rd:DefaultName>DOCSOTIEN</rd:DefaultName>
-        <Top>2.64111in</Top>
-        <Left>0.16667in</Left>
-        <Height>0.25in</Height>
-        <Width>5.8368in</Width>
-        <ZIndex>15</ZIndex>
-        <Style>
-          <Border>
-            <Style>None</Style>
-          </Border>
-          <PaddingLeft>2pt</PaddingLeft>
-          <PaddingRight>2pt</PaddingRight>
-          <PaddingTop>2pt</PaddingTop>
-          <PaddingBottom>2pt</PaddingBottom>
-        </Style>
-      </Textbox>
     </ReportItems>
     <Height>2.9375in</Height>
     <Style />
@@ -955,7 +923,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>CỬA HÀNG NỘI THẤT</Value>
+                  <Value>CỬA HÀNG NỘI THẤT CỦA NHÓM 8 </Value>
                   <Style>
                     <FontSize>12pt</FontSize>
                     <FontWeight>Normal</FontWeight>
@@ -966,10 +934,10 @@
             </Paragraph>
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
-          <Top>0.11333in</Top>
-          <Left>2.20708in</Left>
+          <Top>0.09945in</Top>
+          <Left>1.67583in</Left>
           <Height>0.26514in</Height>
-          <Width>1.76042in</Width>
+          <Width>2.93542in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -987,7 +955,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>HÓA ĐƠN THANH TOÁN</Value>
+                  <Value>HÓA ĐƠN</Value>
                   <Style>
                     <FontSize>18pt</FontSize>
                     <FontWeight>Bold</FontWeight>
@@ -999,9 +967,9 @@
           </Paragraphs>
           <rd:DefaultName>Textbox1</rd:DefaultName>
           <Top>0.43403in</Top>
-          <Left>1.67583in</Left>
+          <Left>2.57583in</Left>
           <Height>0.35826in</Height>
-          <Width>2.99937in</Width>
+          <Width>1.31375in</Width>
           <ZIndex>1</ZIndex>
           <Style>
             <Border>
@@ -1018,6 +986,7 @@
         <Border>
           <Style>None</Style>
         </Border>
+        <BackgroundColor>DarkGoldenrod</BackgroundColor>
       </Style>
     </PageHeader>
     <PageFooter>
@@ -1025,39 +994,27 @@
       <PrintOnFirstPage>true</PrintOnFirstPage>
       <PrintOnLastPage>true</PrintOnLastPage>
       <ReportItems>
-        <Line Name="Line1">
-          <Top>0.11458in</Top>
-          <Height>0in</Height>
-          <Width>6.14458in</Width>
-          <Style>
-            <Border>
-              <Style>Solid</Style>
-            </Border>
-          </Style>
-        </Line>
-        <Textbox Name="Textbox2">
+        <Textbox Name="Textbox32">
           <CanGrow>true</CanGrow>
           <KeepTogether>true</KeepTogether>
           <Paragraphs>
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>Cảm ơn quý khách đã mua sắm tại của hàng!</Value>
+                  <Value>SGU Vạn Tuế !!!</Value>
                   <Style>
-                    <FontStyle>Italic</FontStyle>
-                    <FontSize>12pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
                   </Style>
                 </TextRun>
               </TextRuns>
               <Style />
             </Paragraph>
           </Paragraphs>
-          <rd:DefaultName>Textbox2</rd:DefaultName>
-          <Top>0.30903in</Top>
-          <Left>1.43972in</Left>
+          <rd:DefaultName>Textbox32</rd:DefaultName>
+          <Top>0.2925in</Top>
+          <Left>2.29667in</Left>
           <Height>0.25in</Height>
-          <Width>3.44792in</Width>
-          <ZIndex>1</ZIndex>
+          <Width>1.40125in</Width>
           <Style>
             <Border>
               <Style>None</Style>
@@ -1073,6 +1030,7 @@
         <Border>
           <Style>None</Style>
         </Border>
+        <BackgroundColor>Khaki</BackgroundColor>
       </Style>
     </PageFooter>
     <LeftMargin>1in</LeftMargin>
