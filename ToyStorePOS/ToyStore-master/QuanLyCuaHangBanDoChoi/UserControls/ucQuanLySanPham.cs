@@ -315,6 +315,9 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                                 SanPhamDTO spDTO = new SanPhamDTO();
                                 spDTO.masp = masp;
                                 spDTO.tensp = txtTen.Text;
+
+                                spDTO.maloaisp = cboLoai.SelectedValue.ToString().Trim();
+                               // MessageBox.Show(spDTO.maloaisp);
                                 spDTO.ngaysx = dateNgaySX.Value;
                                 spDTO.ngayhethan = dateNgayHetHan.Value;
                                 spDTO.loinhuan = int.Parse(txtLoiNhuan.Text);

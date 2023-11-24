@@ -271,10 +271,12 @@ namespace DataAccessLayer
         {
             try
             {
-                string sql = "UPDATE SANPHAM SET TENSP = @TENSP,NGAYSX = @NGAYSX,NGAYHETHAN = @NGAYHETHAN,DONGIANHAP = @DONGIANHAP,LOINHUAN = @LOINHUAN,DONGIABAN = @DONGIABAN,KHUYENMAI = @KHUYENMAI,HINHANH = @HINHANH WHERE MASP = @MASP";
+                string sql = "UPDATE SANPHAM SET  MALOAISP =@MALOAISP,TENSP = @TENSP,NGAYSX = @NGAYSX,NGAYHETHAN = @NGAYHETHAN,DONGIANHAP = @DONGIANHAP,LOINHUAN = @LOINHUAN,DONGIABAN = @DONGIABAN,KHUYENMAI = @KHUYENMAI,HINHANH = @HINHANH WHERE MASP = @MASP";
                 SqlConnection con = DataProvider.Openconnect();
                 SqlCommand cmd = new SqlCommand();
                 cmd.CommandText = sql;
+                cmd.Parameters.AddWithValue("@MALOAISP", spDTO.maloaisp);
+
                 cmd.Parameters.AddWithValue("@MASP", spDTO.masp);
                 cmd.Parameters.AddWithValue("@TENSP", spDTO.tensp);
                 cmd.Parameters.AddWithValue("@NGAYSX", spDTO.ngaysx);
