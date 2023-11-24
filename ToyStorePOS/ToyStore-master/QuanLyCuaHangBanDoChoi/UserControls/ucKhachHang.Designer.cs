@@ -550,13 +550,13 @@
             this.tableLayoutPanel4.Controls.Add(this.panel9, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel10, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 171);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 174);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 2;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 92F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(998, 791);
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.54822F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88.45177F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(998, 788);
             this.tableLayoutPanel4.TabIndex = 2;
             // 
             // panel9
@@ -564,10 +564,10 @@
             this.panel9.BackColor = System.Drawing.Color.White;
             this.panel9.Controls.Add(this.dgvKhachHang);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(4, 68);
+            this.panel9.Location = new System.Drawing.Point(4, 96);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(990, 718);
+            this.panel9.Size = new System.Drawing.Size(990, 687);
             this.panel9.TabIndex = 1;
             // 
             // dgvKhachHang
@@ -613,7 +613,7 @@
             this.dgvKhachHang.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvKhachHang.RowTemplate.Height = 30;
             this.dgvKhachHang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhachHang.Size = new System.Drawing.Size(990, 718);
+            this.dgvKhachHang.Size = new System.Drawing.Size(990, 687);
             this.dgvKhachHang.TabIndex = 0;
             this.dgvKhachHang.Click += new System.EventHandler(this.dgvKhachHang_Click);
             // 
@@ -625,7 +625,7 @@
             this.panel10.Location = new System.Drawing.Point(4, 5);
             this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(990, 53);
+            this.panel10.Size = new System.Drawing.Size(990, 81);
             this.panel10.TabIndex = 0;
             // 
             // label4
@@ -637,7 +637,7 @@
             this.label4.Location = new System.Drawing.Point(0, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(990, 53);
+            this.label4.Size = new System.Drawing.Size(990, 81);
             this.label4.TabIndex = 56;
             this.label4.Text = "Danh Sách Khách Hàng";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

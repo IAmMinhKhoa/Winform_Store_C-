@@ -181,7 +181,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -202,7 +202,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -223,7 +223,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -244,7 +244,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -265,7 +265,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -286,7 +286,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -307,7 +307,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -349,7 +349,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -370,7 +370,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.Black;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -405,7 +405,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -427,7 +427,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -448,7 +448,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -469,7 +469,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -490,7 +490,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -511,7 +511,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -532,7 +532,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -574,7 +574,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;
@@ -595,7 +595,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     chartTopSP.Series.Clear();
                     chartTopSP.Series.Add("Top 10 Sản Phẩm");
                     chartTopSP.Series["Top 10 Sản Phẩm"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 12, FontStyle.Bold);
+                    chartTopSP.Series["Top 10 Sản Phẩm"].Font = new Font("UTM Avo", 15, FontStyle.Bold);
                     chartTopSP.Series["Top 10 Sản Phẩm"].LabelForeColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderColor = Color.White;
                     chartTopSP.Series["Top 10 Sản Phẩm"].BorderWidth = 2;

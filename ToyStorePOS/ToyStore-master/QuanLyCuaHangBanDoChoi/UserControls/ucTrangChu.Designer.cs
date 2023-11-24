@@ -110,7 +110,7 @@
             this.chartDoanhThu.Name = "chartDoanhThu";
             this.chartDoanhThu.Size = new System.Drawing.Size(731, 650);
             this.chartDoanhThu.TabIndex = 7;
-            this.chartDoanhThu.Text = "Top 10 Sản Phẩm Bán Chạy";
+            this.chartDoanhThu.Text = "Doanh Thu";
             // 
             // tableLayoutPanel1
             // 

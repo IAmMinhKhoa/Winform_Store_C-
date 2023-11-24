@@ -499,7 +499,7 @@ namespace DataAccessLayer
 
                 Console.WriteLine(formattedDate+"ccc");
                 string sql = "SELECT CONVERT(VARCHAR(10),hd.NGAYLAP,101), SUM(hd.THANHTIEN) FROM HOADON hd WHERE (YEAR(hd.NGAYLAP) = YEAR('" + formattedDate + "') AND MONTH(hd.NGAYLAP) = MONTH('" + formattedDate  + "') AND hd.DATHANHTOAN = '1') GROUP BY CONVERT(VARCHAR(10),hd.NGAYLAP,101) ORDER BY CONVERT(VARCHAR(10),hd.NGAYLAP,101) DESC";
-                //trong database ngày của hoá đơn có địng dạng yyyy-mm-dd nên cần convert qua mm-dd-yyyy cho giống với DTO
+                //trong database ngày của hoá đơn có địng dạng yyyy-mm-dd nên cần convert qua mm-dd-yyyy cho giống với kiểu dữ liệu DateTime DTO
                 DataTable dt = new DataTable();
                 List<DoanhThuDTO> lstdtDTO = new List<DoanhThuDTO>();
                 dt = DataProvider.GetTable(sql);
