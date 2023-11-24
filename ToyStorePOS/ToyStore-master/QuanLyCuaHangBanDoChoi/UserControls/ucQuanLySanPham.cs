@@ -586,7 +586,15 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
         }
 
-        private void label20_Click(object sender, EventArgs e)
+       /* frmNCC frm = new frmNCC();
+        frm.ShowDialog();
+            if (frm.b)
+            {
+                LoadCboNCC();
+        LoadCboLocNCC();
+    }*/
+
+    private void label20_Click(object sender, EventArgs e)
         {
 
         }
@@ -727,6 +735,16 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void pnlNCC_Paint_1(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void pnlNCC_MouseClick(object sender, MouseEventArgs e)
+        {
+           
         }
     }
 }
