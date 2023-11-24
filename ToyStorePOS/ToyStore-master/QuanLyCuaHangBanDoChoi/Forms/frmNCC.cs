@@ -2,6 +2,7 @@
 using DTO;
 using System;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Windows.Forms;
 
 namespace QuanLyCuaHangBanDoChoi.Forms
@@ -91,6 +92,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         private void LoadDataGridView()
         {
             dgvNCC.DataSource = NCCBL.GetInstance.GetDanhSachNCC();
+            resetInput();
         }
         int mancc = 0;
         private void btnCapNhat_Click(object sender, EventArgs e)
@@ -192,6 +194,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             try
             {
+                resetInput();
                 if (dgvNCC.SelectedRows.Count == 1)
                 {
                     if (txtTen.BackColor == Color.OrangeRed)
@@ -228,5 +231,30 @@ namespace QuanLyCuaHangBanDoChoi.Forms
         {
             LoadDataGridView();
         }
+
+        private void txtSDT_TextChanged(object sender, EventArgs e)
+        {
+            if (txtSDT.Text != "")
+            {
+                if (!int.TryParse(txtSDT.Text, out int parsedSoDienThoai))
+                {
+                    MessageBox.Show("Số điện thoại sai định dạng");
+                    txtSDT.Clear();
+                }
+            }
+            
+        }
+
+        private void resetInput()
+        {
+            txtTen.BackColor = Color.White;
+            txtDiaChi.BackColor = Color.White;
+            txtEmail.BackColor = Color.White;
+            txtSDT.BackColor = Color.White;
+
+
+
+        }
+
     }
 }

@@ -258,7 +258,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 {
                     Console.WriteLine("chay duoi nay");
                     tong = u.spDTO.giaban - ((u.spDTO.giaban * u.spDTO.khuyenmai) / 100);
-                    dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-", "+");
+                    dgvCTHD.Rows.Insert(dgvCTHD.Rows.Count, u.spDTO.masp, u.spDTO.tensp, u.spDTO.giaban, u.spDTO.khuyenmai, 1, tong, "-");
                     dgvCTHD.Rows[dgvCTHD.Rows.Count - 1].Selected = true;
                     LoadTongHoaDon();
                     Console.WriteLine(hd+"duoi");
@@ -518,84 +518,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-           /* Cursor = Cursors.AppStarting;
-            string pre = "";
-            string next = "";
-            string str = lblPageNumber.Text;
-            bool b = false;
-            for (int i = 0; i < str.Length; i++)
-            {
-                if(str[i] != '/' && b == false)
-                {
-                    pre += str[i];
-                    continue;
-                }
-                if (str[i] != '/' && b == true)
-                {
-                    next += str[i];
-                    continue;
-                }
-                if (str[i] == '/')
-                {
-                    b = true;
-                }
-            }
-            if (pre == next)
-                return;
-
-            string n = "";
-            string num = lblPageNumber.Text;
-            for (int i = 0; i < num.Length; i++)
-            {
-                if (num[i] == '/')
-                {
-                    break;
-                }
-                else
-                {
-                    n += num[i];
-                }
-            }
-           // LoadDanhSachSanPhamTheoBoLoc(int.Parse(n)+1);
-            lblPageNumber.Text= int.Parse(n) + 1+"/"+ sumpage;
-            Cursor = Cursors.Default;*/
+          
         }
 
         private void btnPre_Click(object sender, EventArgs e)
         {
-           /* Cursor = Cursors.AppStarting;
-            string pre = "";
-            string str = lblPageNumber.Text;
-            for (int i = 0; i < str.Length; i++)
-            {
-                if (str[i] == '/')
-                {
-                    break;
-                }
-                else
-                {
-                    pre += str[i];
-                }
-            }
-            if (pre == "1")
-                return;
-
-            string n = "";
-            string num = lblPageNumber.Text;
-            for (int i = 0; i < num.Length; i++)
-            {
-                if (num[i] == '/')
-                {
-                    break;
-                }
-                else
-                {
-                    n += num[i];
-                }
-            }
-            LoadDanhSachSanPhamTheoBoLoc(int.Parse(n) - 1);
-            lblPageNumber.Text = int.Parse(n) - 1 + "/" + sumpage;
-            Cursor = Cursors.Default;*/
+          
         }
 
 

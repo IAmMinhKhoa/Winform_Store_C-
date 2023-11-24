@@ -141,7 +141,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if (txtMatKhau.Text.Length < 5)
+                    if (txtMatKhau.Text.Length > 5)
                     {
                         if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                         {
@@ -335,6 +335,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                                     nvDTO.manv = manv;
                                     nvDTO.tennv = FormatStringInput(txtTen.Text);
                                     nvDTO.maloainv = int.Parse(cboLoai.SelectedValue.ToString().Trim());
+                             
                                     if (cboGioiTinh.Text == "Nam")
                                         nvDTO.gioitinh = true;
                                     else

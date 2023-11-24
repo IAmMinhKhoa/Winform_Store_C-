@@ -53,23 +53,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             taskLoadUserControl.Start();
         }
 
-        /* public void LoadProgressBar()
-         {
-             for (int i = 0; i <= 100; i++)
-             {
-                 //Tách ra khỏi Thread chính
-                 ProgressBar.Invoke(new MethodInvoker(delegate
-                 {
-                     ProgressBar.Value = i;
-                 }));
-
-                 //Tách ra khỏi Thread chính
-                 lblPhanTram.Invoke(new MethodInvoker(delegate
-                 {
-                     lblPhanTram.Text = i.ToString() + "%";
-                 }));
-             }
-         }*/
+   
 
         public void LoadUserControl()
         {
@@ -383,6 +367,7 @@ namespace QuanLyCuaHangBanDoChoi.Forms
             //MemoryStream ms = new MemoryStream(img);
             //picNhanVien.Image = Image.FromStream(ms);
 
+            //MessageBox.Show(TaiKhoanBL.GetInstance.GetTenQuyen(frmDangNhap.Quyen));
             if (TaiKhoanBL.GetInstance.GetTenQuyen(frmDangNhap.Quyen) != "Admin")
             {
                 lbQuyen.Text = TaiKhoanBL.GetInstance.GetTenQuyen(frmDangNhap.Quyen);
