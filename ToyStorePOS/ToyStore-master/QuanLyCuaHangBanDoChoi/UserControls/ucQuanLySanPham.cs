@@ -35,6 +35,14 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             LoadCboLocNCC();
 
             LoadDataGridViewTheoBoLoc();
+
+
+            btnNgungKinhDoanh.Enabled = false;
+            btnNgungKinhDoanh.BackColor = Color.Gray;
+
+            btnCapNhatSP.Enabled = false;
+            btnCapNhatSP.BackColor = Color.Gray;
+
         }
 
         private void LoadCboLocLoaiSP()
@@ -71,6 +79,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
         int masp = 0;
         private void dgvSanPham_Click(object sender, EventArgs e)
         {
+            btnNgungKinhDoanh.Enabled = true;
+            btnNgungKinhDoanh.BackColor = Color.FromArgb(250, 58, 58);
+
+            btnCapNhatSP.Enabled = true;
+            btnCapNhatSP.BackColor = Color.FromArgb(33, 166, 0);
+
             try
             {
                 if (dgvSanPham.SelectedRows.Count == 1)
@@ -108,6 +122,13 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
 
         private void LamMoi()
         {
+            btnNgungKinhDoanh.Enabled = false;
+            btnNgungKinhDoanh.BackColor = Color.Gray;
+
+            btnCapNhatSP.Enabled = false;
+            btnCapNhatSP.BackColor = Color.Gray;
+
+
             txtTen.Clear();
             txtSoLuong.Clear();
             txtKhuyenMai.Clear();

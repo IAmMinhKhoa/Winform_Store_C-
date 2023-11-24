@@ -599,9 +599,9 @@
         </Paragraphs>
         <rd:DefaultName>TONGHOADON</rd:DefaultName>
         <Top>1.66194in</Top>
-        <Left>5.00347in</Left>
+        <Left>4.61459in</Left>
         <Height>0.32639in</Height>
-        <Width>1in</Width>
+        <Width>1.38888in</Width>
         <ZIndex>5</ZIndex>
         <Style>
           <Border>
@@ -629,7 +629,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox6</rd:DefaultName>
         <Top>1.69667in</Top>
-        <Left>4.26389in</Left>
+        <Left>3.88889in</Left>
         <Height>0.25in</Height>
         <Width>0.69792in</Width>
         <ZIndex>6</ZIndex>
