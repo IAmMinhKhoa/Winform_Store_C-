@@ -47,9 +47,9 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
+                    if(txtSoDienThoai.Text.Length == 10)
                     {
-                        if (txtSoDienThoai.Text.Length == 10)
+                        if (int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                         {
                             if (txtDiaChi.Text.Length <= 200)
                             {
@@ -91,7 +91,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
+                            frm.lblThongBao.Text = "Số điện thoại phải là số!";
                             frm.ShowDialog();
                         }
 
@@ -99,7 +99,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                     else
                     {
                         frmThongBao frm = new frmThongBao();
-                        frm.lblThongBao.Text = "Số điện thoại phải là số!";
+                        frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
                         frm.ShowDialog();
                     }
                 }
@@ -228,9 +228,9 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
+                    if(txtSoDienThoai.Text.Length == 10)
                     {
-                        if (txtSoDienThoai.Text.Length == 10)
+                        if (int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                         {
                             if (txtDiaChi.Text.Length <= 200)
                             {
@@ -272,14 +272,14 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
+                            frm.lblThongBao.Text = "Số điện thoại phải là số!";
                             frm.ShowDialog();
                         }
                     }
                     else
                     {
                         frmThongBao frm = new frmThongBao();
-                        frm.lblThongBao.Text = "Số điện thoại phải là số!";
+                        frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
                         frm.ShowDialog();
                     }
                 }
