@@ -11,6 +11,7 @@ using BusinessLogicLayer;
 using System.IO;
 using QuanLyCuaHangBanDoChoi.Forms;
 using DTO;
+using System.Text.RegularExpressions;
 
 namespace QuanLyCuaHangBanDoChoi.UserControls
 {
@@ -29,6 +30,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 LoadCboLocLoaiNV();
                 LoadDataGridViewTheoBoLoc();
                 cboGioiTinh.SelectedIndex = 0;
+                btnSaThai.Enabled = false;
+                btnSaThai.BackColor = Color.Gray;
+                btnCapNhat.Enabled = false;
+                btnCapNhat.BackColor = Color.Gray;
+                btnThem.Enabled = true;
+                btnThem.BackColor = Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             }
             else
             {
@@ -102,6 +109,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 return;
             }
+            btnSaThai.Enabled = true;
+            btnSaThai.BackColor = Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(58)))), ((int)(((byte)(58)))));
+            btnCapNhat.Enabled = true;
+            btnCapNhat.BackColor = Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(145)))), ((int)(((byte)(249)))));
+            btnThem.Enabled = false;
+            btnThem.BackColor = Color.Gray;
         }
 
         private void ResetColorControls()
@@ -122,7 +135,7 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             }
         }
 
-        private void btnThemSP_Click(object sender, EventArgs e)
+        private void btnThemNV_Click(object sender, EventArgs e)
         {
             if (CheckControls())
             {
@@ -130,46 +143,64 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 {
                     if (txtMatKhau.Text.Length < 5)
                     {
-                        if (txtSoDienThoai.Text.Length <= 12 && txtSoDienThoai.Text.Length >= 10)
+                        if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                         {
-                            if (CheckDate())
+                            if (txtSoDienThoai.Text.Length == 10)
                             {
-                                NhanVienDTO nvDTO = new NhanVienDTO();
-                                nvDTO.tennv = txtTen.Text;
-                                nvDTO.matkhau = txtMatKhau.Text;
-                                nvDTO.maloainv = int.Parse(cboLoai.SelectedValue.ToString().Trim());
-                                if (cboGioiTinh.Text == "Nam")
-                                    nvDTO.gioitinh = true;
-                                else
-                                    nvDTO.gioitinh = false;
-                                nvDTO.ngaysinh = dateNgaySinh.Value;
-                                nvDTO.email = txtEmail.Text;
-                                nvDTO.sdt = txtSoDienThoai.Text;
-                                Image img = picHinhAnh.Image;
-                                nvDTO.hinhanh = ImageToByteArray(img);
-
-                                cboLocLoaiNhanVien.SelectedIndex = cboLoai.SelectedIndex;
-
-                                if (NhanVienBL.GetInstance.ThemNhanVien(nvDTO))
+                                if(ValidateEmail(txtEmail.Text))
                                 {
-                                    LoadDataGridViewTheoBoLoc();
-                                    LamMoi();
-                                    MessageBox.Show("Vừa thêm 1 nole vào công ty");
+                                    if (CheckDate())
+                                    {
+                                        NhanVienDTO nvDTO = new NhanVienDTO();
+                                        nvDTO.tennv = FormatStringInput(txtTen.Text);
+                                        nvDTO.matkhau = txtMatKhau.Text;
+                                        nvDTO.maloainv = int.Parse(cboLoai.SelectedValue.ToString().Trim());
+                                        if (cboGioiTinh.Text == "Nam")
+                                            nvDTO.gioitinh = true;
+                                        else
+                                            nvDTO.gioitinh = false;
+                                        nvDTO.ngaysinh = dateNgaySinh.Value;
+                                        nvDTO.email = txtEmail.Text;
+                                        nvDTO.sdt = txtSoDienThoai.Text;
+                                        Image img = picHinhAnh.Image;
+                                        nvDTO.hinhanh = ImageToByteArray(img);
+
+                                        cboLocLoaiNhanVien.SelectedIndex = cboLoai.SelectedIndex;
+
+                                        if (NhanVienBL.GetInstance.ThemNhanVien(nvDTO))
+                                        {
+                                            LoadDataGridViewTheoBoLoc();
+                                            LamMoi();
+                                            MessageBox.Show("Vừa thêm 1 nole vào công ty");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        frmThongBao frm = new frmThongBao();
+                                        frm.lblThongBao.Text = "Mã nhân viên đã tồn tại";
+                                        frm.ShowDialog();
+                                    }
+                                }
+                                else
+                                {
+                                    frmThongBao frm = new frmThongBao();
+                                    frm.lblThongBao.Text = "Định dạng Email không hợp lệ!";
+                                    frm.ShowDialog();
                                 }
                             }
                             else
                             {
                                 frmThongBao frm = new frmThongBao();
-                                frm.lblThongBao.Text = "Mã nhân viên đã tồn tại";
+                                frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
                                 frm.ShowDialog();
                             }
                         }
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Số điện thoại phải từ 10 đến 12 số!";
+                            frm.lblThongBao.Text = "Số điện thoại phải là số!";
                             frm.ShowDialog();
-                        }
+                        }    
                     }
                     else
                     {
@@ -207,6 +238,12 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 cboLoai.SelectedIndex = 0;
             dateNgaySinh.Value = DateTime.Now;
             picHinhAnh.Image = null;
+            btnSaThai.Enabled = false;
+            btnSaThai.BackColor = Color.Gray;
+            btnCapNhat.Enabled = false;
+            btnCapNhat.BackColor = Color.Gray;
+            btnThem.Enabled = true;
+            btnThem.BackColor = Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             ResetColorControls();
         }
 
@@ -286,47 +323,65 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
             {
                 if (txtTen.Text.Length < 50)
                 {
-                    if (txtSoDienThoai.Text.Length >= 10 && txtSoDienThoai.Text.Length <= 12)
+                    if(int.TryParse(txtSoDienThoai.Text, out int parsedSoDienThoai))
                     {
-                        if (CheckDate())
+                        if (txtSoDienThoai.Text.Length == 10)
                         {
-                            NhanVienDTO nvDTO = new NhanVienDTO();
-                            nvDTO.manv = manv;
-                            nvDTO.tennv = txtTen.Text;
-                            nvDTO.maloainv = int.Parse(cboLoai.SelectedValue.ToString().Trim());
-                            if (cboGioiTinh.Text == "Nam")
-                                nvDTO.gioitinh = true;
-                            else
-                                nvDTO.gioitinh = false;
-                            nvDTO.ngaysinh = dateNgaySinh.Value;
-                            nvDTO.email = txtEmail.Text;
-                            nvDTO.sdt = txtSoDienThoai.Text;
-                            Image img = picHinhAnh.Image;
-                            nvDTO.hinhanh = ImageToByteArray(img);
-                            if (frmDangNhap.Quyen == 1)
-                                cboLocLoaiNhanVien.SelectedIndex = cboLoai.SelectedIndex;
-
-                            if (NhanVienBL.GetInstance.SuaThongTinNhanVien(nvDTO))
+                            if (ValidateEmail(txtEmail.Text))
                             {
-                                if (frmDangNhap.Quyen == 1)
-                                    LoadDataGridViewTheoBoLoc();
-                                LamMoi();
-                                MessageBox.Show("Cập nhật thành công");
+                                if (CheckDate())
+                                {
+                                    NhanVienDTO nvDTO = new NhanVienDTO();
+                                    nvDTO.manv = manv;
+                                    nvDTO.tennv = FormatStringInput(txtTen.Text);
+                                    nvDTO.maloainv = int.Parse(cboLoai.SelectedValue.ToString().Trim());
+                                    if (cboGioiTinh.Text == "Nam")
+                                        nvDTO.gioitinh = true;
+                                    else
+                                        nvDTO.gioitinh = false;
+                                    nvDTO.ngaysinh = dateNgaySinh.Value;
+                                    nvDTO.email = txtEmail.Text;
+                                    nvDTO.sdt = txtSoDienThoai.Text;
+                                    Image img = picHinhAnh.Image;
+                                    nvDTO.hinhanh = ImageToByteArray(img);
+                                    if (frmDangNhap.Quyen == 1)
+                                        cboLocLoaiNhanVien.SelectedIndex = cboLoai.SelectedIndex;
+
+                                    if (NhanVienBL.GetInstance.SuaThongTinNhanVien(nvDTO))
+                                    {
+                                        if (frmDangNhap.Quyen == 1)
+                                            LoadDataGridViewTheoBoLoc();
+                                        LamMoi();
+                                        MessageBox.Show("Cập nhật thành công");
+                                    }
+                                }
+                                else
+                                {
+                                    frmThongBao frm = new frmThongBao();
+                                    frm.lblThongBao.Text = "Ngày sinh không hợp lệ!";
+                                    frm.ShowDialog();
+                                }
+                            }
+                            else
+                            {
+                                frmThongBao frm = new frmThongBao();
+                                frm.lblThongBao.Text = "Định dạng Email không hợp lệ!";
+                                frm.ShowDialog();
                             }
                         }
                         else
                         {
                             frmThongBao frm = new frmThongBao();
-                            frm.lblThongBao.Text = "Ngày sinh không hợp lệ";
+                            frm.lblThongBao.Text = "Số điện thoại phải 10 số!";
                             frm.ShowDialog();
                         }
                     }
                     else
                     {
                         frmThongBao frm = new frmThongBao();
-                        frm.lblThongBao.Text = "Số điện thoại phải từ 10 đến 12 số";
+                        frm.lblThongBao.Text = "Số điện thoại phải là số!";
                         frm.ShowDialog();
-                    }
+                    }        
                 }
                 else
                 {
@@ -341,6 +396,36 @@ namespace QuanLyCuaHangBanDoChoi.UserControls
                 frm.lblThongBao.Text = "Bạn chưa nhập đủ thông tin nhân viên";
                 frm.ShowDialog();
             }
+        }
+
+        private bool ValidateEmail(string email)
+        {
+            // Biểu thức chính quy cho định dạng email
+            string emailPattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+
+            // Kiểm tra định dạng email
+            if (Regex.IsMatch(email, emailPattern))
+            {
+                return true; // Email hợp lệ
+            }
+            else
+            {
+                return false; // Email không hợp lệ
+            }
+        }
+
+        private string FormatStringInput(string name)
+        {
+            // Chuyển tất cả các ký tự thành chữ thường
+            name = name.ToLower();
+
+            // Chuyển đổi các ký tự đầu của từ thành chữ hoa
+            name = System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(name);
+
+            // Loại bỏ các khoảng trắng không cần thiết
+            name = string.Join(" ", name.Split(default(string[]), StringSplitOptions.RemoveEmptyEntries));
+
+            return name;
         }
 
         private void txtTen_Click(object sender, EventArgs e)

@@ -536,7 +536,7 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
-            this.btnThem.Click += new System.EventHandler(this.btnThemSP_Click);
+            this.btnThem.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // dateNgaySinh
             // 
