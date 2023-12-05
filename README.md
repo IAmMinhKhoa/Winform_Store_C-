@@ -1,0 +1,10 @@
+# Winform_Store_C-
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/f6ccbeb8-a28c-44a9-8237-9f6f24ed4873)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/59d7e0ee-fe72-4518-972b-43a7b300afbe)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/5b1d53a4-8bfc-4699-9a8a-14c8427124a2)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/27c235a6-179d-4a24-b626-455b4c9a5cae)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/74515b2b-4f75-4b56-ae7c-bf756b4dd6cf)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/ec8a20c7-ba80-4297-9325-9f218be6f18f)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/72701043-f4a4-4e2b-9511-4dbff0003dac)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/4ab893bb-6b23-4a87-9479-8bb9d4257eb4)
+![image](https://github.com/IAmMinhKhoa/Winform_Store_C-/assets/88275892/763f8944-a94a-4445-b0a9-b29229da3b6d)
